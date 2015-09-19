@@ -1,0 +1,468 @@
+/* General Styles */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.row {
+  margin: 0 !important;
+}
+.container {
+  padding: 0;
+  margin: 0;
+  width: 100% !important;
+}
+header {
+  display: none;
+}
+.ccm-responsive-navigation {
+  background: #FFFFFF;
+}
+/* Sidebar */
+#fixed-sidebar {
+  position: fixed;
+  z-index: 20;
+  background: white;
+  height: 100%;
+}
+/* Sidebar Nav Button Style Overrides */
+#fixed-sidebar .nav {
+  padding-top: 20px;
+}
+#fixed-sidebar .nav>li>a {
+  color: #7F7F7F !important;
+  font-size: 1.3em;
+  font-family: "Museo500";
+}
+#fixed-sidebar .nav>li>a:hover, .nav>li>a:focus {
+  color: #00A9BA !important;
+  background-color: #FFFFFF;
+}
+
+/* Content Button Overrides */
+.hp-content-link-block {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.hp-content-link {
+  padding: 5px;
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Museo700";
+  background: url("../images/arrow_blue.png") no-repeat right center; 
+  background-size: 25px;
+}
+.hp-content-link:hover {
+  background-size: 100% 100%;
+  background: url("../images/arrow_red.png") no-repeat right center;  
+  background-size: 25px;
+}
+.hp-content-link-block.portfolio {
+  width: 60%;
+}
+.hp-content-link-block.approach {
+  width: 85%;
+}
+.hp-content-link-block.questions {
+  width: 40%;
+}
+/* Main Banner */
+.ccm-custom-style-mainbanner {
+  background-size: 100%;
+}
+.hp-main-banner h1 {
+  font-size: 4em !important;
+  font-family: "Museo700";
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0 !important;
+}
+.hp-main-banner h2 {
+  font-size: 2.8em !important;
+  font-family: "Museo500" !important;
+  color: white !important;
+  margin: auto;
+  padding-top: 0px !important;
+  padding-bottom: 10px;
+}
+.hp-banner-link-block {
+  width: 30%;
+  margin:auto;
+}
+.hp-banner-link {
+  padding: 5px;
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.5em;
+  color: white !important;
+  text-align: center;
+  font-family: "Museo700";
+  background: url("../images/arrow_white_forward.png") no-repeat right center; 
+  background-size: 25px; 
+}
+.hp-banner-link:hover {
+  color: #cdde63;
+  background: url("../images/arrow_green.png") no-repeat right center; 
+  background-size: 25px; 
+}
+/* Main Content */
+.col-content {
+  z-index: 10;
+  left: 15%;
+  width: 85% !important;
+  padding:0 !important;
+}
+.col-content .ccm-custom-style-container{
+ height: 378px;
+ margin-top: -21px;
+ width: 100%;
+}
+.col-content .ccm-custom-style-container img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.col-content h1 {
+    text-align: center !important;
+    padding-top: 50px !important;
+    font-family: "Museo700" !important;
+}
+.col-content h2 {
+    font-size: 2.2em;
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Museo500";
+}
+.col-content h3 {
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Museo300";
+}
+.col-content .hp-text-block h4 {
+    font-size: 3em;
+    font-family: "Museo300";
+    color: #1AA9BA;
+}
+.col-content h5 {
+    font-size: 1.4em;
+    padding-top: 50px;
+    font-family: "Museo300";
+}
+.col-content .hp-text-block {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.ccm-imageblock {
+  width: 100% !important;
+}
+.hp-content-pic-right {
+    width: 80% !important;  
+    overflow: hidden;
+    width: 60%;
+}
+.hp-content-pic-right img{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+}
+
+.hp-content-pic-right .questions{
+    width: 60% !important;
+}
+
+.hp-content-pic-left {
+    width: 418px !important; 
+    height: 340px !important; 
+    overflow: hidden;
+    width: 100%;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+.hp-content-pic-left img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+}
+.col-content .row {
+  padding-left: 20px;
+}
+.col-content hr{
+  margin-top: 30px !important;
+  margin-bottom: 40px !important; 
+}
+
+/* Social Links Override */
+.ccm-block-social-links i { 
+    width: 30px;
+}
+.ccm-block-social-links i.fa-external-link {
+  content: url("../images/Social_email.gif");
+}
+.ccm-block-social-links i.fa-pinterest {
+  content: url("../images/Social_pintrest.gif");
+}
+.ccm-block-social-links i.fa-linkedin-square {
+  content: url("../images/Social_linkedin.gif"); 
+}
+.ccm-block-social-links i.fa-twitter {
+  content: url("../images/Social_twitter.gif");
+}
+.ccm-block-social-links li {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+.ccm-block-social-links {
+  text-align: center;
+}
+.ccm-block-social-links .list-inline {
+  margin-left: 0 !important;
+} 
+/* Footer Styles */
+#footer-theme {
+  height: 120px;
+  width: 100%;
+}
+#footer-theme .container{
+ margin-left: 17%;
+ width: 70%;  
+}
+#footer-theme section {
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+#footer-theme .footer-logo {
+  padding-left: 20%;
+  padding-right: 50px;
+}
+
+/* Footer Nav Button Style Overrides */
+#footer-theme .nav {
+  display:inline !important !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer-theme .nav li {
+  display:inline !important;
+  float: left;
+}
+#footer-theme .nav>li>a:hover, .nav>li>a:focus {
+  background-color: #1AA9BA;
+}
+#footer-theme .col-sm-8{
+  width: 70% !important;
+  float: left;
+}
+#footer-theme.col-sm-4{
+  width: 30% !important;
+  float: left;
+}
+
+/* Dimension Specific */
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+  .ccm-block-social-links i { 
+      width: 25px;
+  }
+  .hp-content-link-block.portfolio {
+    width: 70%;
+  }
+  .hp-content-link-block.approach {
+    width: 90%;
+  }
+  .hp-content-link-block.questions {
+    width: 50%;
+  }
+  .hp-banner-link-block {
+    width: 40%;
+  }
+  .ccm-custom-style-mainbanner {
+    padding-top: 40px !important;
+  }
+  .hp-content-pic-right.questions {
+    padding-top: 60px !important;
+  }
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hp-main-banner h1 {
+    font-size: 2.8em !important;
+  }
+  .hp-main-banner h2 {
+    font-size: 2.0em !important;
+  }
+  .col-md-2 {
+    width: 15%;
+  }
+  .ccm-custom-style-mainbanner {
+    padding-top: 20px !important;
+  }
+  .ccm-block-social-links i { 
+      width: 45px;
+  }
+  #fixed-sidebar .nav>li>a {
+    color: #7F7F7F !important;
+    font-size: 1.0em;
+    font-family: "Museo500";
+  }
+  .hp-banner-link-block {
+    width: 60%;
+  }
+  .hp-content-link-block.portfolio {
+    width: 80%;
+  }
+  .hp-content-link-block.approach {
+    width: 95%;
+  }
+  .hp-content-link-block.questions {
+    width: 50%;
+  }
+  .hp-content-pic-right.questions {
+    padding-top: 50px !important;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .hp-main-banner h1 {
+    font-size: 3em !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #fixed-sidebar {
+    display: none;
+  }
+  header {
+    display: initial;
+  }
+  .col-content {
+    z-index: 10;
+    width: 100% !important;
+    padding:0 !important;
+    left: 0;
+  }
+  .ccm-custom-style-mainbanner {
+    height: 100%;
+    padding-bottom: 60px !important;
+  }
+  .hp-main-banner h1 {
+    padding-top: 0 !important;
+  }
+  .hp-main-banner h2 {
+    padding-top: 10px;
+    font-size: 2em !important;
+  } 
+  .hp-banner-link-block {
+    width: 50%;
+    margin:auto;
+  }
+  .col-content .ccm-custom-style-container{
+    padding-left: 0 !important;
+  }
+  .hp-text-block h4 {
+      font-size: 3em;
+      text-align: center;
+  }
+  .hp-text-block p {
+      font-size: 1.5em !important;
+  }
+  #footer-theme .container{
+   margin-left: 0;
+   width: 100%;  
+  } 
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .hp-main-banner h2 {
+    font-size: 1.5em !important;
+  }
+  .ccm-custom-style-mainbanner {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+  }
+  .hp-banner-link {
+    padding: 2px;
+    font-size: 1.0em;
+    background-size: 20px; 
+  }
+  .hp-banner-link:hover {
+    background-size: 20px; 
+  }
+  #fixed-sidebar {
+    display: none;
+  }
+  header {
+    display: initial;
+  }
+  .row {
+    padding: 0 !important;
+    float: left;
+  }
+  hr {
+    width: 100%;
+  }
+  .col-sm-6{
+    padding: 0 !important;
+  }
+  .hp-text-block {
+    padding: 20px !important;
+  }
+  .hp-content-pic-right {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .hp-content-pic-left {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .hp-content-link-block {
+    margin-bottom: 20px;
+  }
+  .hp-content-link {
+    font-size: 1.5em;
+  }
+  .hp-content-link-block.portfolio {
+    width: 60%;
+  }
+  .hp-content-link-block.approach {
+    width: 90%;
+  }
+  .hp-content-link-block.questions {
+    width: 60%;
+  }
+  .hp-content-pic-right .questions {
+    padding-top: 50px !important;
+  }
+  #footer-theme .container{
+   margin-left: 0;
+   width: 100%;  
+  }
+  #footer-theme .nav {
+    display:none;
+  }
+  #footer-theme .col-sm-8{
+    width: 70% !important;
+    float: left;
+    font-size: 0.7em !important;
+  }
+  #footer-theme .col-sm-4{
+    width: 30% !important;
+    float: left;
+  }
+  .footer-logo{
+    padding: 0 !important;
+  }
+  #footer-theme section {
+    height: 100%;
+  }
+}
