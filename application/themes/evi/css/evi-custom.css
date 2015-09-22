@@ -17,6 +17,13 @@ header {
 .ccm-responsive-navigation {
   background: #FFFFFF;
 }
+hr {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+main {
+  padding-bottom: 0px !important;
+}
 /* Sidebar */
 #fixed-sidebar {
   position: fixed;
@@ -24,9 +31,21 @@ header {
   background: white;
   height: 100%;
 }
+#fixed-sidebar .sidebar-logo img{
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
 /* Sidebar Nav Button Style Overrides */
 #fixed-sidebar .nav {
-  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#fixed-sidebar .nav>li {
+  height: 30px;
 }
 #fixed-sidebar .nav>li>a {
   color: #7F7F7F !important;
@@ -39,68 +58,41 @@ header {
 }
 
 /* Content Button Overrides */
-.hp-content-link-block {
-  padding-top: 40px;
-  padding-left: 20px;
+.content-link-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.hp-content-link {
-  padding: 5px;
+.content-link {
   text-transform: uppercase;
-  display: block;
+  display: inline;
   font-size: 1.2em;
-  text-align: center;
-  font-family: "Museo700";
+  font-family: "Museo300";
   background: url("../images/arrow_blue.png") no-repeat right center; 
   background-size: 25px;
+  padding: 5px 30px 5px 0;
 }
-.hp-content-link:hover {
-  background-size: 100% 100%;
+.content-link:hover {
   background: url("../images/arrow_red.png") no-repeat right center;  
   background-size: 25px;
-}
-.hp-content-link-block.portfolio {
-  width: 60%;
-}
-.hp-content-link-block.approach {
-  width: 85%;
-}
-.hp-content-link-block.questions {
-  width: 40%;
 }
 /* Main Banner */
 .ccm-custom-style-mainbanner {
   background-size: 100%;
 }
-.hp-main-banner h1 {
-  font-size: 4em !important;
-  font-family: "Museo700";
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0 !important;
-}
-.hp-main-banner h2 {
-  font-size: 2.8em !important;
-  font-family: "Museo500" !important;
-  color: white !important;
-  margin: auto;
-  padding-top: 0px !important;
-  padding-bottom: 10px;
-}
 .hp-banner-link-block {
-  width: 30%;
-  margin:auto;
+  text-align: center;
 }
 .hp-banner-link {
   padding: 5px;
   text-transform: uppercase;
-  display: block;
+  display: inline;
   font-size: 1.5em;
   color: white !important;
   text-align: center;
   font-family: "Museo700";
   background: url("../images/arrow_white_forward.png") no-repeat right center; 
   background-size: 25px; 
+  padding: 5px 30px 5px 0;
 }
 .hp-banner-link:hover {
   color: #cdde63;
@@ -110,36 +102,87 @@ header {
 /* Main Content */
 .col-content {
   z-index: 10;
-  left: 15%;
-  width: 85% !important;
+  left: 16.7%;
+  width: 83.2% !important;
   padding:0 !important;
 }
+.top-banner {
+  margin-bottom: 60px;
+  background-size: 100% 130%;
+}
+.top-banner img{
+    width: 200px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-content .top-banner h1 {
+    font-size: 4.0em;
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Museo700";
+    color: white;
+}
+.col-content .top-banner h2 {
+    font-size: 3.0em;
+    text-align: center;
+    font-family: "Museo500";
+    color: white;
+}
+.tag-box {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50%;
+}
+.tag-box h3 {
+
+}
+.col-content .main-top-banner h1{
+    font-size: 5.0em;
+    padding-top: 50px;
+    margin-bottom: 0px;
+    font-family: "Museo700";
+    color: white;
+}
+.col-content .main-top-banner h2{
+    font-size: 3.0em;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 50px;
+    font-family: "Museo700";
+    color: white;
+}
+/* General Main Body style*/
+.col-content .main-body {
+  margin: 0 50px 0 50px;
+}
 .col-content .ccm-custom-style-container{
- height: 378px;
- margin-top: -21px;
- width: 100%;
+ /*height: 378px;*/
+ /*margin-top: -21px;*/
 }
 .col-content .ccm-custom-style-container img{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-.col-content h1 {
-    text-align: center !important;
-    padding-top: 50px !important;
-    font-family: "Museo700" !important;
+.col-content .main-body h1 {
+    font-family: "Museo300";
+    color: #00A9BA;
+    font-size: 3em;
 }
-.col-content h2 {
+.col-content .main-body h2 {
     font-size: 2.2em;
-    text-align: center;
-    padding-top: 50px;
     font-family: "Museo500";
 }
-.col-content h3 {
+.col-content .main-body h3 {
     font-size: 1.8em;
     text-align: center;
-    padding-top: 50px;
     font-family: "Museo300";
+}
+.col-content .main-body h4 {
+    font-size: 1.2em;
+    font-family: "Museo300";
+    color: #00A9BA;
 }
 .col-content .hp-text-block h4 {
     font-size: 3em;
@@ -152,12 +195,15 @@ header {
     font-family: "Museo300";
 }
 .col-content .hp-text-block {
-    padding-left: 50px;
     padding-top: 50px;
 }
 .ccm-imageblock {
   width: 100% !important;
 }
+.main-body {
+  padding-bottom: 60px;
+}
+/* Mainbody Main Page Style*/
 .hp-content-pic-right {
     width: 80% !important;  
     overflow: hidden;
@@ -194,33 +240,52 @@ header {
   margin-top: 30px !important;
   margin-bottom: 40px !important; 
 }
-
-/* Social Links Override */
-.ccm-block-social-links i { 
-    width: 30px;
+/* Mainbody About Page*/
+.about-right-box {
+  padding-bottom: 60px;
 }
-.ccm-block-social-links i.fa-external-link {
+.about-right-box .about-profile-pic img{
+  padding-top: 40px;
+  width: 210px;
+}
+/* Mainbody Approach Page*/
+/* Mainbody Portfolio Page*/
+/* Mainbody Contacts Page*/
+.contact-top-content {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+/* Social Links Override */
+.side-social-box {
+  text-align: center;  
+}
+.side-social-box ul{
+  width: 100%;
+  margin-left: 0px;
+}
+.side-social-box li {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.side-social-box i { 
+    width: 38px;
+}
+.side-social-box i.fa-external-link {
   content: url("../images/Social_email.gif");
 }
-.ccm-block-social-links i.fa-pinterest {
+.side-social-box i.fa-pinterest {
   content: url("../images/Social_pintrest.gif");
 }
-.ccm-block-social-links i.fa-linkedin-square {
+.side-social-box i.fa-linkedin-square {
   content: url("../images/Social_linkedin.gif"); 
 }
-.ccm-block-social-links i.fa-twitter {
+.side-social-box i.fa-twitter {
   content: url("../images/Social_twitter.gif");
-}
-.ccm-block-social-links li {
-  padding-left: 2px !important;
-  padding-right: 2px !important;
-}
-.ccm-block-social-links {
-  text-align: center;
-}
-.ccm-block-social-links .list-inline {
-  margin-left: 0 !important;
 } 
+.side-social-box p {
+  color: #CBCBCB;
+  font-family: "Museo700";
+}
 /* Footer Styles */
 #footer-theme {
   height: 120px;
@@ -271,20 +336,14 @@ header {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 }
-  .ccm-block-social-links i { 
-      width: 25px;
-  }
-  .hp-content-link-block.portfolio {
+  .content-link-block.portfolio {
     width: 70%;
   }
-  .hp-content-link-block.approach {
+  .content-link-block.approach {
     width: 90%;
   }
-  .hp-content-link-block.questions {
+  .content-link-block.questions {
     width: 50%;
-  }
-  .hp-banner-link-block {
-    width: 40%;
   }
   .ccm-custom-style-mainbanner {
     padding-top: 40px !important;
