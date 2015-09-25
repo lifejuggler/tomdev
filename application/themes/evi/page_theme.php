@@ -118,6 +118,15 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
                 ),
             ),
             array(
+                'handle' => 'general_page',
+                'name' => 'General Page',
+                'container' => '<div class="row"></div>',
+                'columns' => array(
+                    '<div class="col-sm-2"></div>',
+                    '<div class="col-sm-10"></div>'
+                ),
+            ),
+            array(
                 'handle' => 'right_sidebar',
                 'name' => 'Right Sidebar',
                 'container' => '<div class="row"></div>',

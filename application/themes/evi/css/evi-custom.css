@@ -24,6 +24,7 @@ hr {
 main {
   padding-bottom: 0px !important;
 }
+
 /* Sidebar */
 #fixed-sidebar {
   position: fixed;
@@ -31,7 +32,7 @@ main {
   background: white;
   height: 100%;
 }
-#fixed-sidebar .sidebar-logo img{
+#fixed-sidebar img{
   width: 140px;
   margin-left: auto;
   margin-right: auto;
@@ -76,9 +77,6 @@ main {
   background-size: 25px;
 }
 /* Main Banner */
-.ccm-custom-style-mainbanner {
-  background-size: 100%;
-}
 .hp-banner-link-block {
   text-align: center;
 }
@@ -116,6 +114,14 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+.col-content .main-top-banner h1{
+  font-family: "Museo700";
+  color: white;
+}
+.col-content .main-top-banner h2{
+    font-family: "Museo700";
+    color: white;
+}
 .col-content .top-banner h1 {
     font-size: 4.0em;
     text-align: center;
@@ -137,20 +143,8 @@ main {
 .tag-box h3 {
 
 }
-.col-content .main-top-banner h1{
-    font-size: 5.0em;
-    padding-top: 50px;
-    margin-bottom: 0px;
-    font-family: "Museo700";
-    color: white;
-}
-.col-content .main-top-banner h2{
-    font-size: 3.0em;
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-bottom: 50px;
-    font-family: "Museo700";
-    color: white;
+.main-top-banner {
+  background-size: 100%;
 }
 /* General Main Body style*/
 .col-content .main-body {
@@ -177,6 +171,7 @@ main {
 .col-content .main-body h3 {
     font-size: 1.8em;
     text-align: center;
+    color: #00A9BA;
     font-family: "Museo300";
 }
 .col-content .main-body h4 {
@@ -250,6 +245,31 @@ main {
 }
 /* Mainbody Approach Page*/
 /* Mainbody Portfolio Page*/
+/* Portfolio Portfolio Detail Page*/
+.portfolio-detail-banner {
+  background: url("../images/header_portfolio_small.jpg");
+  height: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.rslides {
+  float: left;
+}
+.rslides_tabs {
+  float: left;
+}
+#gallery-slider li {
+  border: 0;
+}
+#gallery-slider li a{
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+.thumbnail {
+  background: none;
+  border: none;
+}
 /* Mainbody Contacts Page*/
 .contact-top-content {
   padding-left: 36px;
@@ -326,16 +346,44 @@ main {
   width: 30% !important;
   float: left;
 }
-
 /* Dimension Specific */
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-
+  .col-content .main-top-banner h1{
+      font-size: 5.0em;
+      margin-bottom: 0px;
+      font-family: "Museo700";
+      color: white;
+  }
+  .col-content .main-top-banner h2{
+      font-size: 3.0em;
+      padding-top: 0px;
+      margin-top: 0px;
+      padding-bottom: 50px;
+      font-family: "Museo700";
+      color: white;
+  }
+  /* portfolio portfolio detail page */
+  .ccm-image-slider-inner {
+    width: 1100px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+  }
+  .rslides {
+    width: 60% !important;
+  }
+  #gallery-slider {
+    padding-left: 30px;
+  }
+  #gallery-slider li{
+    display: block;
+    width: 60px;
+  }
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-}
   .content-link-block.portfolio {
     width: 70%;
   }
@@ -345,12 +393,31 @@ main {
   .content-link-block.questions {
     width: 50%;
   }
-  .ccm-custom-style-mainbanner {
+  .main-top-banner {
     padding-top: 40px !important;
   }
   .hp-content-pic-right.questions {
     padding-top: 60px !important;
   }
+  .col-content .main-top-banner h1{
+    font-size: 5.0em;
+    margin-bottom: 0px;
+    font-family: "Museo700";
+    color: white;
+  }
+  .col-content .main-top-banner h2{
+      font-size: 3.0em;
+      padding-top: 0px;
+      margin-top: 0px;
+      padding-bottom: 50px;
+      font-family: "Museo700";
+      color: white;
+  }
+  /* Social Links*/
+  .side-social-box i { 
+      width: 38px;
+  }
+}
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   .hp-main-banner h1 {
@@ -364,9 +431,6 @@ main {
   }
   .ccm-custom-style-mainbanner {
     padding-top: 20px !important;
-  }
-  .ccm-block-social-links i { 
-      width: 45px;
   }
   #fixed-sidebar .nav>li>a {
     color: #7F7F7F !important;
@@ -388,30 +452,74 @@ main {
   .hp-content-pic-right.questions {
     padding-top: 50px !important;
   }
+  /* Social Links*/
+  .side-social-box i { 
+      width: 55px;
+  }
+  /* Footer*/
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  .hp-main-banner h1 {
-    font-size: 3em !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  /* Fixed Side Bar*/
   #fixed-sidebar {
     display: none;
   }
-  header {
-    display: initial;
-  }
+  /* Mainbody */
   .col-content {
     z-index: 10;
     width: 100% !important;
     padding:0 !important;
     left: 0;
   }
-  .ccm-custom-style-mainbanner {
+  .ccm-custom-style-container {
+    padding: 0 !important;
+  }
+  .col-content .main-body {
+    margin: 0 10px 0 10px;
+  }
+  .col-content .row {
+    padding: 0;
+  }
+  .main-top-banner {
+    padding-top: 2px !important;
+    padding-bottom: 10px !important;
+  }
+  .col-content .main-top-banner h1{
+    font-size: 3em;
+    margin: 0;
+    font-family: "Museo700";
+    color: white;
+  }
+  .col-content .hp-text-block {
+     padding: 10px;
+  }
+  .col-content .main-top-banner h2{
+    font-size: 1.5em;
+    margin-bottom: 45px;
+    font-family: "Museo700";
+    color: white;
+  }
+
+  .hp-banner-link-block {
+    margin:auto;
+    background: #00A9BA;
+  }
+  .hp-banner-link
+  /* Mainbody About Page*/
+  .about-right-box {
+    padding-bottom: 60px;
+  }
+  .about-right-box .about-profile-pic img{
+    padding-top: 40px;
+    width: 210px;
+  }
+  header {
+    display: initial;
+  }
+  .main-top-banner {
     height: 100%;
-    padding-bottom: 60px !important;
+    padding-bottom: 60px;
   }
   .hp-main-banner h1 {
     padding-top: 0 !important;
@@ -420,88 +528,70 @@ main {
     padding-top: 10px;
     font-size: 2em !important;
   } 
-  .hp-banner-link-block {
-    width: 50%;
-    margin:auto;
-  }
-  .col-content .ccm-custom-style-container{
-    padding-left: 0 !important;
-  }
-  .hp-text-block h4 {
-      font-size: 3em;
+  .col-content .main-body h4 {
+      font-size: 2.2em !important;
       text-align: center;
+      margin: auto;
   }
   .hp-text-block p {
       font-size: 1.5em !important;
   }
+  /* Social Links*/
+  .side-social-box i { 
+      width: 45px;
+  }
+  /* Footer */
   #footer-theme .container{
    margin-left: 0;
    width: 100%;  
   } 
+  .hp-content-pic-right img {
+    margin: 0;
+  }
+  .content-link {
+  }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-  .hp-main-banner h2 {
-    font-size: 1.5em !important;
-  }
-  .ccm-custom-style-mainbanner {
-    padding-top: 10px !important;
-    padding-bottom: 20px !important;
-  }
-  .hp-banner-link {
-    padding: 2px;
-    font-size: 1.0em;
-    background-size: 20px; 
-  }
-  .hp-banner-link:hover {
-    background-size: 20px; 
-  }
+  /* Fixed Side Bar*/
   #fixed-sidebar {
     display: none;
-  }
   header {
     display: initial;
   }
-  .row {
-    padding: 0 !important;
-    float: left;
-  }
-  hr {
+  /* Main Content */
+  .col-content {
+    left: 0;
     width: 100%;
   }
-  .col-sm-6{
-    padding: 0 !important;
+  /* Mainbody */
+  .main-top-banner {
+    padding-top: 0px;
   }
-  .hp-text-block {
-    padding: 20px !important;
+  .col-content .main-top-banner h1{
+    font-size: 3em !important;
+    margin-bottom: 0px;
+    font-family: "Museo700";
+    color: white;
   }
-  .hp-content-pic-right {
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .col-content .main-top-banner h2{
+    font-size: 2.0em;
+    margin-bottom: 0px;
+    font-family: "Museo700";
+    color: white;
   }
-  .hp-content-pic-left {
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .col-content .main-body h4 {
+      font-size: 2.2em !important;
+      font-family: "Museo300";
+      color: #00A9BA;
   }
-  .hp-content-link-block {
-    margin-bottom: 20px;
+  .top-banner {
+    margin-bottom: 60px;
+    background-size: 100% 130%;
   }
-  .hp-content-link {
-    font-size: 1.5em;
-  }
-  .hp-content-link-block.portfolio {
-    width: 60%;
-  }
-  .hp-content-link-block.approach {
-    width: 90%;
-  }
-  .hp-content-link-block.questions {
-    width: 60%;
-  }
-  .hp-content-pic-right .questions {
-    padding-top: 50px !important;
-  }
+
+  /* Footer */
   #footer-theme .container{
    margin-left: 0;
    width: 100%;  

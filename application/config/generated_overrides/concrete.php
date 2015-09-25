@@ -2,7 +2,7 @@
 
 /**
  * -----------------------------------------------------------------------------
- * Generated 2015-09-22T04:24:19-04:00
+ * Generated 2015-09-24T16:29:39-04:00
  *
  * @item      misc.do_page_reindex_check
  * @group     concrete
@@ -38,5 +38,20 @@ return array(
                 'fontcolor',
             ),
         ),
+    ),
+    'maintenance' => array(
+        'version_job_page_num' => '155',
+    ),
+    'cache' => array(
+        'blocks' => false,
+        'assets' => false,
+        'theme_css' => false,
+        'overrides' => false,
+        'pages' => '0',
+        'full_page_lifetime' => 'default',
+        'full_page_lifetime_value' => null,
+    ),
+    'theme' => array(
+        'compress_preprocessor_output' => false,
     ),
 );
