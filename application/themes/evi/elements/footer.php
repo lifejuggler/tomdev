@@ -29,7 +29,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
     </section>
 </footer>
 
-<footer id="concrete5-brand">
+<!-- <footer id="concrete5-brand">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -39,7 +39,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 
 
 <?php $this->inc('elements/footer_bottom.php');?>
