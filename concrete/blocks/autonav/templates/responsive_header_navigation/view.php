@@ -100,10 +100,10 @@ foreach ($navItems as $ni) {
     }
     */
 
-    /*
+    
     //unique class for every single menu item
     $classes[] = 'nav-item-' . $ni->cID;
-    */
+    
 
     //Put all classes together into one space-separated string
     $ni->classes = implode(" ", $classes);

@@ -408,6 +408,10 @@ footer#footer-theme .footer-copyright {
       margin-top: -1px;
   }
   /* Main Top Banner */
+  .col-content .main-top-banner {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
   .col-content .main-top-banner h1{
       font-size: 5.0em;
       margin-bottom: 0px;
@@ -421,6 +425,12 @@ footer#footer-theme .footer-copyright {
       padding-bottom: 50px;
       font-family: "Museo700";
       color: white;
+  }
+  /* Approach page*/
+  .approach-help-text {
+    padding-top: 60px;
+    padding-right: 20px;
+
   }
   /* portfolio portfolio detail page */
   .portfolio-slides {
@@ -443,6 +453,7 @@ footer#footer-theme .footer-copyright {
     display: block;
     width: 60px;
   }
+
   /* Footer */
   #footer-theme .container{
   } 
@@ -555,8 +566,6 @@ footer#footer-theme .footer-copyright {
     padding: 0;
   }
   .main-top-banner {
-    padding-top: 2px !important;
-    padding-bottom: 10px !important;
   }
   .col-content .main-top-banner h1{
     font-size: 3em;
@@ -631,7 +640,6 @@ footer#footer-theme .footer-copyright {
   /* Main Banner */
   .hp-banner-link-block {
     margin:auto;
-    background: #00A9BA;
   }
   /* Main Content */
   .col-content {
@@ -640,14 +648,20 @@ footer#footer-theme .footer-copyright {
   }
   /* Mainbody */
   .main-top-banner {
-    padding-top: 0px;
+    padding-bottom: 150px;
+    background-size: 1000px 600px;
+    right: 0;
+    background-position: 80% 50%;
   }
   .col-content .main-top-banner h1{
+    padding: 80px 20px 50px 20px;
+    display: block;
     font-size: 3em !important;
     margin-bottom: 0px;
     color: white;
   }
   .col-content .main-top-banner h2{
+    padding: 10px 20px 50px 20px;
     font-size: 1.5em;
     margin-bottom: 0px;
     margin-top:5px;
@@ -655,6 +669,7 @@ footer#footer-theme .footer-copyright {
     color: white;
   }
   .col-content .main-body h4 {
+      padding-top: 50px;
       font-size: 2.2em !important;
       font-family: "Museo300";
       color: #00A9BA;
@@ -663,13 +678,21 @@ footer#footer-theme .footer-copyright {
     margin-bottom: 60px;
     background-size: 100% 130%;
   }
+  .content-link-block .portfolio {
 
+  }
+  .ccm-responsive-overlay {
+    top: 85px !important;
+  }
   /* Footer */
   #footer-theme .container{
    margin-left: 0;
    width: 100%;  
   }
   #footer-theme .nav {
+    display:none;
+  }
+  #footer-theme .footer-logo {
     display:none;
   }
   #footer-theme .col-sm-8{

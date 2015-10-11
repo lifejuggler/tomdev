@@ -64,7 +64,14 @@
 .rslide_tabs li.rslides_here a {
     background: #333;
 }
-
+.rslides_here .thumbnail{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 3px 3px 3px;
+    border: 1px solid rgba(81, 203, 238, 1);
+    height: 60px;
+    width: 60px;
+}
+3
 .rslide-tabs li a {
     overflow: hidden;
     background: #ccccc9;
