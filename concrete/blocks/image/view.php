@@ -25,9 +25,9 @@ if (is_object($f)) {
     if ($linkURL):
         print '<a href="' . $linkURL . '">';
     endif;
-
+    $attr = $c->getAttribute('page_thumbnail');
+    print $attr;
     print $tag;
-
     if ($linkURL):
         print '</a>';
     endif;

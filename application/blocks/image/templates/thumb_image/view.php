@@ -1,6 +1,10 @@
 <?php defined('C5_EXECUTE') or die("Access Denied.");
 
 $c = Page::getCurrentPage();
+$attr = $c->getAttribute('thumbnail');
+if (!$attr) {
+    $c->setAttribute('thumbnail', $f);
+}
 if (is_object($f)) {
     if ($maxWidth > 0 || $maxHeight > 0) {
         $im = Core::make('helper/image');
@@ -25,9 +29,7 @@ if (is_object($f)) {
     if ($linkURL):
         print '<a href="' . $linkURL . '">';
     endif;
-
     print $tag;
-
     if ($linkURL):
         print '</a>';
     endif;

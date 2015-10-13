@@ -37,6 +37,7 @@ $this->inc('elements/header.php'); ?>
                 <?php
                 $a = new Area('Portfolio Detail Content');
                 $a->setAreaGridMaximumColumns(12);
+                
                 $a->display($c);
                 ?>
             </div>

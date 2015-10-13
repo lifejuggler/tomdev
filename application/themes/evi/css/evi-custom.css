@@ -176,7 +176,7 @@ main {
 }
 .col-content .main-body h3 {
     font-size: 1.8em;
-    text-align: center;
+    text-align: left;
     color: #00A9BA;
     font-family: "Museo300";
 }
@@ -222,10 +222,8 @@ main {
 }
 
 .hp-content-pic-left {
-    width: 418px !important; 
-    height: 340px !important; 
     overflow: hidden;
-    width: 100%;
+    width: 80% !important;
     margin-left: 50px;
     padding-top: 20px;
 }
@@ -233,9 +231,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 100% !important;
-}
-.col-content .row {
-  padding-left: 20px;
 }
 .col-content hr{
   margin-top: 30px !important;
@@ -252,13 +247,37 @@ main {
 /* Mainbody Approach Page*/
 /* Mainbody Portfolio Page*/
 /* Portfolio Portfolio Detail Page*/
+div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-title {
+  margin-top: 0 !important;
+  color: #7F7F7F !important;
+}
+div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-title:hover{
+  color: #D1145B !important;
+}
+.thumb-grid-link a{
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 1em;
+  font-family: "Museo500";
+  background: url("../images/arrow_grey.png") no-repeat right center; 
+  background-size: 25px;
+  padding: 5px 30px 5px 0;
+}
+.thumb-grid-link a:hover {
+  color: #D1145B !important;
+  background: url("../images/arrow_red.png") no-repeat right center;  
+  background-size: 25px;
+}
 .portfolio-detail-back {
   padding-top: 15px;
   padding-left: 25px;
 }
 .portfolio-detail-logo {
-  padding-top: 30px;
-  padding-left: 40%;
+  padding-top: 20px;
+  padding-left: 65%;
+  padding-right: 20px;
 }
 .portfolio-back-link {
   padding: 5px;
@@ -280,9 +299,15 @@ main {
 .portfolio-links {
   color: black;
 }
-.pd-body h1 {
-  padding-left: 30px;
+.pd-body {
+  padding: 0 20px 0 20px;
 }
+.pd-body h1 {
+  padding-left: 15px;
+  font-family: "Museo500" !important;
+  color: #1AA9BA !important;
+}
+
 .portfolio-detail-banner {
   background: url("../images/header_portfolio_small.jpg");
   height: 100px;
@@ -432,7 +457,15 @@ footer#footer-theme .footer-copyright {
     padding-right: 20px;
 
   }
+  /* portfolio page */
+  .pd-main-body {
+    min-height: 800px;
+  }
   /* portfolio portfolio detail page */
+  .pd-body h1{
+    font-size: 2.5em !important;
+    font-weight: 500 !important;
+  }
   .portfolio-slides {
     width: 1100px !important;
     margin-left: auto;

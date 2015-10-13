@@ -47,6 +47,7 @@ class Controller extends BlockController
 
     public function view()
     {
+
         $f = File::getByID($this->fID);
         if (!is_object($f) || !$f->getFileID()) {
             return false;

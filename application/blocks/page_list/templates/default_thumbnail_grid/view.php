@@ -39,22 +39,15 @@ $c = Page::getCurrentPage();
                 $tag->addClass('img-responsive');
                 print $tag;
                 ?>
-                    <div class="ccm-block-page-list-page-entry-grid-thumbnail-hover">
-                        <div class="ccm-block-page-list-page-entry-grid-thumbnail-title-wrapper">
-                        <div class="ccm-block-page-list-page-entry-grid-thumbnail-title">
-                            <i class="ccm-block-page-list-page-entry-grid-thumbnail-icon"></i>
-                            <?php echo $hoverLinkText?>
-                        </div>
-                        </div>
-                    </div>
+
                 </a>
-
-                <?php if ($useButtonForLink) { ?>
-                <div class="ccm-block-page-list-title">
-                    <?php echo $title; ?>
+                <div class="thumb-grid-link">
+                    <a href="<?php echo $url ?>" target="<?php echo $target ?>">
+                        <div class="ccm-block-page-list-title">
+                            <?php echo $title; ?>
+                        </div>
+                    </a>
                 </div>
-                <?php } ?>
-
                 <?php if ($includeDate): ?>
                     <div class="ccm-block-page-list-date"><?php echo $date?></div>
                 <?php endif; ?>
