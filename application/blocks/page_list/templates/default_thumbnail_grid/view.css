@@ -57,3 +57,6 @@ div.ccm-block-page-list-page-entry-grid-thumbnail-title i {
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-item img {
     height: 190px !important;
 }
+.container .mix{
+  display: none;
+}

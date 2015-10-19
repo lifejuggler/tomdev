@@ -297,7 +297,7 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   background-size: 25px; 
 }
 .portfolio-links {
-  color: black;
+  cursor: pointer;
 }
 .pd-body {
   padding: 0 20px 0 20px;

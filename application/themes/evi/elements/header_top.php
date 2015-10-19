@@ -20,6 +20,7 @@
             document.querySelector('head').appendChild(msViewportStyle)
         }
     </script>
+    <script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/jquery.mixitup.js"></script>
 </head>
 <body>
 

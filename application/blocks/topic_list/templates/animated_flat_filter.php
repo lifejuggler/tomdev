@@ -13,7 +13,7 @@ if (is_object($tree)) {
         <?php foreach($node->getChildNodes() as $child) { 
         $tag = $child->getTreeNodeDisplayName();
         $tag_name = str_replace(array(" ", "&", "amp;"), '', $tag); ?>
-            <li><a data-filter=".<?php echo $tag_name ?>" class="filter" href="#">
+            <li><a data-filter=".<?php echo $tag_name ?>" class="filter">
                 <?php echo $child->getTreeNodeDisplayName()?></a></li>
         <?php } ?>
         </ol>
