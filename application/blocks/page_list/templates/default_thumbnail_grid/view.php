@@ -12,6 +12,7 @@ $c = Page::getCurrentPage();
         </div>
     <?php endif; ?>
     <div id="Container" class="container">
+        <div id="filterError"> No Result Found </div>
         <?php foreach ($pages as $page):
     		$title = $th->entities($page->getCollectionName());
     		$url = $nh->getLinkToCollection($page);
@@ -85,6 +86,15 @@ $c = Page::getCurrentPage();
 <?php endif; ?>
 <script type="text/javascript">
     $(function(){
-      $('#Container').mixItUp();
+      $('#Container').mixItUp({
+        callbacks: {
+            onMixStart: function(state, futureState){
+                document.getElementById('filterError').style.display = 'none'
+            },
+            onMixFail: function(state){
+                document.getElementById('filterError').style.display = 'block';
+            }
+        }
+      });
     });
 </script>

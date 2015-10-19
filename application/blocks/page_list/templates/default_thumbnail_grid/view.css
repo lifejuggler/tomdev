@@ -60,3 +60,6 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 .container .mix{
   display: none;
 }
+#filterError {
+    display: none;
+}
