@@ -46,16 +46,18 @@ div.ccm-block-page-list-page-entry-grid-thumbnail-title {
 div.ccm-block-page-list-page-entry-grid-thumbnail-title i {
     display: none;
 }
-
+div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-item {
+    width: 320px;
+}
 @media (min-width: 768px) {
   div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-item {
     float: left;
-    max-width: 33.3%;
-    max-height: 180px !important;
+    max-height: 220px !important;
     object-fit: contain;
   }
+}
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-item img {
-    height: 190px !important;
+    height: 180px !important;
 }
 .container .mix{
   display: none;

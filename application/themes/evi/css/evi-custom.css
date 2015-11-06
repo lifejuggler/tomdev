@@ -91,13 +91,13 @@ main {
   font-size: 1.5em;
   color: white !important;
   text-align: center;
-  font-family: "Museo700";
+  font-family: "Museo500";
   background: url("../images/arrow_white_forward.png") no-repeat right center; 
   background-size: 25px; 
   padding: 5px 30px 5px 0;
 }
 .hp-banner-link:hover {
-  color: #cdde63;
+  color: #cdde63 !important;
   background: url("../images/arrow_green.png") no-repeat right center; 
   background-size: 25px; 
 }
@@ -195,9 +195,6 @@ main {
     padding-top: 50px;
     font-family: "Museo300";
 }
-.col-content .hp-text-block {
-    padding-top: 50px;
-}
 .ccm-imageblock {
   width: 100% !important;
 }
@@ -206,26 +203,16 @@ main {
 }
 /* Mainbody Main Page Style*/
 .hp-content-pic-right {
-    width: 80% !important;  
     overflow: hidden;
-    width: 60%;
 }
 .hp-content-pic-right img{
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 100% !important;
 }
 
-.hp-content-pic-right .questions{
-    width: 60% !important;
-}
-
 .hp-content-pic-left {
     overflow: hidden;
-    width: 80% !important;
-    margin-left: 50px;
-    padding-top: 20px;
 }
 .hp-content-pic-left img{
     margin-left: auto;
@@ -245,8 +232,25 @@ main {
   width: 210px;
 }
 /* Mainbody Approach Page*/
+#approach-quote {
+  font-family: "Museo500";
+  color: #A1A1A1;
+  font-size: 34px;
+}
+#quote-speaker {
+  font-family: "Museo500";
+  color: #1aa9b9;
+  font-size: 20px;
+}
 /* Mainbody Portfolio Page*/
+div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-title {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+}
 /* Portfolio Portfolio Detail Page*/
+div.ccm-page h1.page-title {
+  text-transform: none !important;
+}
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-title {
   margin-top: 0 !important;
   color: #7F7F7F !important;
@@ -271,8 +275,8 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   background-size: 25px;
 }
 .portfolio-detail-back {
-  padding-top: 15px;
   padding-left: 25px;
+  padding-top: 25px;
 }
 .portfolio-detail-logo {
   padding-top: 20px;
@@ -280,24 +284,29 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   padding-right: 20px;
 }
 .portfolio-back-link {
-  padding: 5px;
   /*text-transform: uppercase;*/
   display: inline;
   font-size: 2em;
   color: white !important;
   text-align: center;
-  font-family: "Museo700";
+  vertical-align: middle;
+  font-family: "Museo500";
   background: url("../images/arrow_white.png") no-repeat left center; 
   background-size: 25px; 
   padding: 5px 0px 5px 35px;
+  margin: auto 0;
 }
 .portfolio-back-link:hover {
   color: #cdde63 !important;
   background: none; 
+  background: url("../images/arrow_green_back.png") no-repeat left center;
   background-size: 25px; 
+  margin: auto 0;
 }
 .portfolio-links {
   cursor: pointer;
+  text-align: center;
+  font-family: "Museo500";
 }
 .pd-body {
   padding: 0 20px 0 20px;
@@ -311,14 +320,15 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 .portfolio-detail-banner {
   background: url("../images/header_portfolio_small.jpg");
   height: 100px;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 .rslides {
   float: left;
 }
 .rslides_tabs {
   float: left;
+}
+.pd-title h1.page-title {
+  text-transform: capitalize !important;
 }
 #gallery-slider li {
   border: 0;
@@ -344,6 +354,15 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 .contact-top-content {
   padding-left: 36px;
   padding-right: 36px;
+}
+.contact-form {
+  padding-left: 20px;
+}
+.contact-submit .btn-primary {
+  background-color: #1aa9b9;
+  border-radius: 5px !important;
+  padding: 5px 30px 5px 30px !important;
+  font-size: 1.2em;
 }
 /* Social Links Override */
 .side-social-box {
@@ -374,25 +393,22 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 } 
 .side-social-box p {
   color: #CBCBCB;
-  font-family: "Museo700";
+  font-family: "Museo500";
 }
 /* Footer Styles */
 #footer-theme {
-  height: 90px;
   width: 100%;
   background: #1AA9BA;
 }
 #footer-theme .container{
  margin-left: 17%;
  width: 70%;  
+ font-family: "Open Sans";
 }
 #footer-theme section {
   padding-top: 10px !important;
   padding-bottom: 0px !important;
-}
-#footer-theme .footer-logo {
-  padding-left: 20%;
-  padding-right: 50px;
+  font-family: "Open Sans";
 }
 
 /* Footer Nav Button Style Overrides */
@@ -421,6 +437,9 @@ footer#footer-theme .footer-copyright {
   color: white;
   padding-left: 13px;
 }
+div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-item {
+  width: 303px;
+}
 /* Dimension Specific */
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -437,10 +456,18 @@ footer#footer-theme .footer-copyright {
     padding-top: 75px;
     padding-bottom: 100px;
   }
+  .hp-content-pic-left {
+      width: 80% !important;
+      margin-left: 50px;
+      padding-top: 20px;
+  }
+  .hp-content-pic-right {
+      width: 80% !important;
+  }
   .col-content .main-top-banner h1{
       font-size: 5.0em;
       margin-bottom: 0px;
-      font-family: "Museo700";
+      font-family: "Museo500";
       color: white;
   }
   .col-content .main-top-banner h2{
@@ -448,18 +475,36 @@ footer#footer-theme .footer-copyright {
       padding-top: 0px;
       margin-top: 0px;
       padding-bottom: 50px;
-      font-family: "Museo700";
+      font-family: "Museo500";
       color: white;
   }
+  .col-content .portfolio-text .hp-text-block {
+      padding-top: 30px;
+  }
+  .col-content .approach-text .hp-text-block {
+      padding-top: 30px;
+  }
+  .col-content .question-text .hp-text-block {
+      padding-top: 10px;
+  }
+
   /* Approach page*/
   .approach-help-text {
-    padding-top: 60px;
+    padding-top: 10px;
     padding-right: 20px;
 
   }
+  .approach-help-pic {
+    width:150px;
+    padding-top:10px;
+  }
+  .contact-help-pic {
+    width:130px;
+    padding-top:30px;    
+  }
   /* portfolio page */
   .pd-main-body {
-    min-height: 800px;
+    min-height: 400px;
   }
   /* portfolio portfolio detail page */
   .pd-body h1{
@@ -491,7 +536,9 @@ footer#footer-theme .footer-copyright {
   #footer-theme .container{
   } 
   #footer-theme .footer-logo {
-      padding-top: 10px;
+    padding-top: 10px;
+    padding-left: 20%;
+    padding-right: 50px;
   }
 }
 
@@ -504,16 +551,29 @@ footer#footer-theme .footer-copyright {
     width: 90%;
   }
   .content-link-block.questions {
-    width: 50%;
+    width: 70%;
   }
   .main-top-banner {
     padding-top: 40px !important;
   }
+  .hp-content-pic-right.porfolio {
+    padding-top: 60px !important;
+    width: 100% !important;
+  }
+  .hp-content-pic-left {
+    width: 80% !important;
+    margin-left: 50px;
+    padding-top: 50px;
+  }
   .hp-content-pic-right.questions {
     padding-top: 60px !important;
+    width: 100% !important;
   }
   .col-content {
     margin-top: 0;
+  }
+  .hp-banner-link-block {
+    padding-bottom: 30px;
   }
   h1 {
     margin-top: 0;
@@ -521,13 +581,14 @@ footer#footer-theme .footer-copyright {
   .col-content .main-top-banner h1{
     font-size: 5.0em;
     margin-bottom: 0px;
+    font-weight: 500 !important;
     color: white;
   }
   .col-content .main-top-banner h2{
       font-size: 3.0em;
       padding-top: 0px;
       margin-top: 0px;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
       color: white;
   }
   /* Social Links*/
@@ -536,16 +597,23 @@ footer#footer-theme .footer-copyright {
   }
   /* Footer */
   #footer-theme .container{
-   margin-left: 0;
+   margin-left: 17%;
    padding-top: 20px;
    width: 100%;  
   } 
+  #footer-theme .footer-logo {
+    width: 100px;
+    padding-top: 10px;
+  }
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-content {
     left: 15%;
     width: 86% !important;
+  }
+  .col-content .main-body {
+    margin: 0 30px 0 30px;
   }
   h1 {
     margin-top: 0;
@@ -561,14 +629,31 @@ footer#footer-theme .footer-copyright {
   }
   .ccm-custom-style-mainbanner {
     padding-top: 20px !important;
+    padding-bottom: 60px;
   }
   #fixed-sidebar .nav>li>a {
     color: #7F7F7F !important;
     font-size: 1.0em;
     font-family: "Museo500";
+    padding: 0 !important;
+  }
+  .col-content .hp-text-block h4 {
+    font-size: 2.5em;
+  }
+  .main-top-banner h1 {
+    font-size: 3.0em !important;
+  }
+  .main-top-banner h2 {
+    font-size: 2.0em !important;
   }
   .hp-banner-link-block {
-    width: 60%;
+    padding: 10px 0 10px 0;
+  }
+  .hp-content-pic-right {
+    padding-top: 60px !important;
+  }
+    .hp-content-pic-left {
+    padding-top: 60px !important;
   }
   .hp-content-link-block.portfolio {
     width: 80%;
@@ -587,10 +672,42 @@ footer#footer-theme .footer-copyright {
       width: 55px;
   }
   /* Footer*/
+  #footer-theme .footer-logo {
+    width: 100px;
+    padding-top: 10px;
+  }
+  #footer-theme .col-sm-2 {
+    padding: 0 !important;
+  }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  /* Mobile header */
+  #mobile-header-bar-logo {
+    text-align: center;
+    height: 50px;
+    background-color: white;
+  }
+  #mobile-header-bar-logo .center-header-logo {
+    height: 50px;
+  }
+  #mobile-header-bar-logo #top-header-logo {
+    display: inline-block;
+    font-family: "Museo500";
+    font-size: 1.2em;
+    vertical-align: middle;
+    color:#00AABC;
+    padding-left: 4px;
+    letter-spacing: 2px;
+  }
+  #mobile-header-bar-logo {
+  }
+  .ccm-responsive-overlay {
+    top: 95px !important;
+    text-align: center;
+    padding-left: 0 !important;
+  }
   /* Fixed Side Bar*/
   #fixed-sidebar {
     display: none;
@@ -616,6 +733,24 @@ footer#footer-theme .footer-copyright {
   }
   .main-top-banner {
   }
+  .hp-text-block {
+    margin-top: 20px;
+  }
+  .content-link-block {
+    padding: 10px;
+  }
+  .hp-content-pic-right {
+    width: 70% !important;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hp-content-pic-left {
+    width: 70% !important;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .col-content .main-top-banner h1{
     font-size: 3em;
     margin: 0;
@@ -630,7 +765,6 @@ footer#footer-theme .footer-copyright {
     color: white;
   }
 
-  .hp-banner-link
   /* Mainbody About Page*/
   .about-right-box {
     padding-bottom: 60px;
@@ -670,6 +804,13 @@ footer#footer-theme .footer-copyright {
    margin-left: 0;
    width: 100%;  
   } 
+  #footer-theme .footer-logo {
+    width: 180px;
+    float: right;
+  }
+  .footer-copyright {
+    margin-left: 15px;
+  }
   .hp-content-pic-right img {
     margin: 0;
   }
@@ -679,6 +820,32 @@ footer#footer-theme .footer-copyright {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  /* Mobile header */
+  #mobile-header-bar-logo {
+    text-align: center;
+    height: 50px;
+    background-color: white;
+  }
+  #mobile-header-bar-logo .center-header-logo {
+    height: 50px;
+  }
+  #mobile-header-bar-logo #top-header-logo {
+    display: inline-block;
+    font-family: "Museo500";
+    font-size: 1.2em;
+    vertical-align: middle;
+    color:#00AABC;
+    padding-left: 4px;
+    letter-spacing: 2px;
+  }
+  .header-social-bar {
+    margin-right: 20px;
+  }
+  .ccm-responsive-overlay {
+    top: 95px !important;
+    text-align: center;
+    padding-left: 0 !important;
+  }
   /* Fixed Side Bar*/
   #fixed-sidebar {
     display: none;
@@ -700,13 +867,13 @@ footer#footer-theme .footer-copyright {
   }
   /* Mainbody */
   .main-top-banner {
-    padding-bottom: 150px;
+    padding-bottom: 40px;
     background-size: 1000px 600px;
     right: 0;
     background-position: 80% 50%;
   }
   .col-content .main-top-banner h1{
-    padding: 80px 20px 50px 20px;
+    padding: 80px 20px 0px 20px;
     display: block;
     font-size: 3em !important;
     margin-bottom: 0px;
@@ -714,8 +881,8 @@ footer#footer-theme .footer-copyright {
   }
   .col-content .main-top-banner h2{
     padding: 10px 20px 50px 20px;
-    font-size: 1.5em;
-    margin-bottom: 0px;
+    font-size: 2em;
+    margin-bottom: 20px;
     margin-top:5px;
     padding-bottom: 5px;
     color: white;
@@ -726,6 +893,16 @@ footer#footer-theme .footer-copyright {
       font-family: "Museo300";
       color: #00A9BA;
   }
+  .contact-top-content {
+    margin: 0 15px;
+  }
+  .contact-top-content h1 {
+    text-align: center;
+  }
+  .hp-content-pic-right {
+    width: 70% !important;
+    margin-top: 10px;
+  }
   .top-banner {
     margin-bottom: 60px;
     background-size: 100% 130%;
@@ -733,24 +910,27 @@ footer#footer-theme .footer-copyright {
   .content-link-block .portfolio {
 
   }
-  .ccm-responsive-overlay {
-    top: 85px !important;
-  }
   /* Footer */
+  #footer-theme {
+    height: 120px;
+  }
   #footer-theme .container{
    margin-left: 0;
    width: 100%;  
-  }
-  #footer-theme .nav {
-    display:none;
   }
   #footer-theme .footer-logo {
     display:none;
   }
   #footer-theme .col-sm-8{
-    width: 70% !important;
+    width: 100% !important;
     float: left;
-    font-size: 0.7em !important;
+    font-size: 0.9em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+  #footer-theme .col-sm-8 .nav{
+    width: 100% !important;
   }
   #footer-theme .col-sm-4{
     width: 30% !important;
