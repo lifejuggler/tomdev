@@ -14,6 +14,11 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
                 $a = new GlobalArea('Header Navigation');
                 $a->display();
                 ?>
+                <div id="mobile-header-bar-logo">
+                    <img class= "center-header-logo" src="<?php echo $view->getThemePath()?>/images/Evi-designs_Browser_icon.png"> 
+                        <span id="top-header-logo"> DESIGNS </span>
+                    </img>
+                </div>
             </div>
         </div>
     </div>
