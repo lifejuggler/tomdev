@@ -152,10 +152,6 @@ main {
 .main-top-banner {
   background-size: 100%;
 }
-/* General Main Body style*/
-.col-content .main-body {
-  margin: 0 50px 0 50px;
-}
 .col-content .ccm-custom-style-container{
  /*height: 378px;*/
  /*margin-top: -21px;*/
@@ -229,7 +225,6 @@ main {
 }
 .about-right-box .about-profile-pic img{
   padding-top: 40px;
-  width: 210px;
 }
 /* Mainbody Approach Page*/
 #approach-quote {
@@ -274,15 +269,6 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   background: url("../images/arrow_red.png") no-repeat right center;  
   background-size: 25px;
 }
-.portfolio-detail-back {
-  padding-left: 25px;
-  padding-top: 25px;
-}
-.portfolio-detail-logo {
-  padding-top: 20px;
-  padding-left: 65%;
-  padding-right: 20px;
-}
 .portfolio-back-link {
   /*text-transform: uppercase;*/
   display: inline;
@@ -308,9 +294,6 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   text-align: center;
   font-family: "Museo500";
 }
-.pd-body {
-  padding: 0 20px 0 20px;
-}
 .pd-body h1 {
   padding-left: 15px;
   font-family: "Museo500" !important;
@@ -320,6 +303,10 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 .portfolio-detail-banner {
   background: url("../images/header_portfolio_small.jpg");
   height: 100px;
+}
+div.ccm-page .ccm-image-slider-container {
+  background: none !important;
+  border: none !important;
 }
 .rslides {
   float: left;
@@ -440,6 +427,9 @@ footer#footer-theme .footer-copyright {
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-item {
   width: 303px;
 }
+div.ccm-page .breadcrumb a.filter.active {
+  color: #1aa9b9 !important;
+}
 /* Dimension Specific */
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -487,7 +477,10 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   .col-content .question-text .hp-text-block {
       padding-top: 10px;
   }
-
+  /* General Main Body style*/
+  .col-content .main-body {
+    margin: 0 50px 0 50px;
+  }
   /* Approach page*/
   .approach-help-text {
     padding-top: 10px;
@@ -507,6 +500,9 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     min-height: 400px;
   }
   /* portfolio portfolio detail page */
+  .pd-body {
+    padding: 0 20px 0 20px;
+  }
   .pd-body h1{
     font-size: 2.5em !important;
     font-weight: 500 !important;
@@ -515,6 +511,31 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     width: 1100px !important;
     margin-left: auto;
     margin-right: auto;
+  }
+  .portfolio-detail-logo {
+    padding-top: 20px;
+    padding-left: 65%;
+    padding-right: 20px;
+  }
+  .portfolio-detail-back {
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+  .ccm-image-slider {
+    min-height: 650px;
+  }
+  .rslides {
+    width: 77% !important;
+    margin-left: -80px !important;
+    padding-bottom: 100px;
+  }
+  .rslides-here .thumbnail {
+    width: 100% !important;
+  }
+  #gallery-slider {
+    margin-left: 20px;
+    margin-right: -20px;
+    width: 20%;
   }
   div.ccm-page .ccm-image-slider-container {
     border-bottom: none !important;
@@ -539,6 +560,10 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     padding-top: 10px;
     padding-left: 20%;
     padding-right: 50px;
+  }
+  .about-right-box .about-profile-pic img{
+    padding-top: 40px;
+    width: 240px;
   }
 }
 
@@ -569,6 +594,10 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     padding-top: 60px !important;
     width: 100% !important;
   }
+  .about-right-box .about-profile-pic img{
+    padding-top: 40px;
+    width: 200px;
+  }
   .col-content {
     margin-top: 0;
   }
@@ -590,6 +619,19 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
       margin-top: 0px;
       padding-bottom: 30px;
       color: white;
+  }
+  .portfolio-detail-logo {
+    padding-top: 20px;
+    padding-left: 65%;
+    padding-right: 20px;
+  }
+  .portfolio-detail-back {
+    padding-left: 15px;
+    padding-top: 25px;
+    font-size: 16px;
+    width: 70%;
+    float: left;
+    display: block;
   }
   /* Social Links*/
   .side-social-box i { 
@@ -613,7 +655,7 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     width: 86% !important;
   }
   .col-content .main-body {
-    margin: 0 30px 0 30px;
+    margin: 0 30px 0 15px;
   }
   h1 {
     margin-top: 0;
@@ -671,6 +713,33 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   .side-social-box i { 
       width: 55px;
   }
+  .portfolio-detail-logo {
+    padding-top: 20px !important;
+    padding-left: 50px;
+    padding-right: 20px;
+    width: 120px;
+    float: left;
+  }
+  .portfolio-detail-back {
+    padding-left: 15px;
+    padding-top: 25px;
+    font-size: 14px;
+    width: 80%;
+    float: left;
+    display: block;
+  }
+  .rslides {
+    width: 70% !important;
+    margin-left: -10px !important;
+  }
+  .rslides-here .thumbnail {
+    width: 100% !important;
+  }
+  #gallery-slider {
+    margin-left: 20px;
+    margin-right: -20px;
+    width: 13%;
+  }
   /* Footer*/
   #footer-theme .footer-logo {
     width: 100px;
@@ -678,6 +747,10 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   }
   #footer-theme .col-sm-2 {
     padding: 0 !important;
+  }
+  .about-right-box .about-profile-pic img{
+    padding-top: 40px;
+    width: 160px;
   }
 }
 
@@ -704,7 +777,7 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   #mobile-header-bar-logo {
   }
   .ccm-responsive-overlay {
-    top: 95px !important;
+    top: 45px !important;
     text-align: center;
     padding-left: 0 !important;
   }
@@ -718,6 +791,15 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     width: 100% !important;
     padding:0 !important;
     left: 0;
+  }
+  .approach-right-pic {
+    width: 400px;
+  }
+  .approach-help-pic {
+    width: 200px;
+  }
+  .contact-help-pic {
+    width: 200px;
   }
   h1 {
     margin-top: 0;
@@ -792,8 +874,62 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
       text-align: center;
       margin: auto;
   }
+  .approach-right-pic {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .approach-help-pic {
+    margin-top: -20px 0 20px 0;
+    width: 180px;
+  }
+  .contact-help-pic {
+    width: 180px;
+  }
+  .portfolio-detail-logo {
+    padding-top: 20px !important;
+    padding-left: 400px;
+    padding-right: 20px;
+    width: 15%;
+    float: left;
+  }
+  .portfolio-detail-back {
+    padding-left: 15px;
+    padding-top: 25px;
+    font-size: 16px;
+    width: 70%;
+    float: left;
+    display: block;
+  }
+  .portfolio-approach-block {
+    float:left;
+    display: block;
+    width: 230px;
+  }
+  .contact-approach-block {
+    padding-left: 10px;
+    float:left;
+    display: block;
+    width: 230px;
+  }
   .hp-text-block p {
       font-size: 1.5em !important;
+  }
+  .about-right-box .about-profile-pic img{
+    padding-top: 40px;
+    width: 210px;
+  }
+  .rslides {
+    width: 77% !important;
+    margin-left: -10px !important;
+  }
+  .rslides-here .thumbnail {
+    width: 100% !important;
+  }
+  #gallery-slider {
+    margin-left: 20px;
+    margin-right: -20px;
+    width: 20%;
   }
   /* Social Links*/
   .side-social-box i { 
@@ -805,7 +941,7 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
    width: 100%;  
   } 
   #footer-theme .footer-logo {
-    width: 180px;
+    width: 140px;
     float: right;
   }
   .footer-copyright {
@@ -842,7 +978,7 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     margin-right: 20px;
   }
   .ccm-responsive-overlay {
-    top: 95px !important;
+    top: 45px !important;
     text-align: center;
     padding-left: 0 !important;
   }
@@ -903,12 +1039,67 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
     width: 70% !important;
     margin-top: 10px;
   }
+  .about-right-box .about-profile-pic img{
+    padding-top: 40px;
+    width: 120px;
+  }
+  .approach-right-pic {
+    width: 350px;
+  }
+  .approach-help-pic {
+    margin-top: -20px 0 20px 0;
+    width: 140px;
+  }
+  .contact-help-pic {
+    width: 140px;
+  }
+  .portfolio-approach-block {
+    float:left;
+    display: block;
+    width: 175px;
+  }
+  .contact-approach-block {
+    padding-left: 10px;
+    float:left;
+    display: block;
+    width: 175px;
+  }
   .top-banner {
     margin-bottom: 60px;
     background-size: 100% 130%;
   }
+  .portfolio-detail-logo {
+    padding-top: 20px !important;
+    padding-left: 400px;
+    padding-right: 20px;
+    width: 25%;
+    float: left;
+  }
+  .portfolio-detail-back {
+    padding-left: 15px;
+    padding-top: 25px;
+    font-size: 14px;
+    width: 70%;
+    float: left;
+    display: block;
+  }
+  .pd-body {
+    padding: 0 10px 10px 10px;
+  }
   .content-link-block .portfolio {
 
+  }
+  .ccm-image-slider-container {
+    margin-bottom: -10px !important;
+  }
+  .rslides {
+    width: 77% !important;
+    margin-left: -10px !important;
+  }
+  #gallery-slider {
+    margin-left: 20px;
+    margin-right: -20px;
+    width: 20%;
   }
   /* Footer */
   #footer-theme {
