@@ -1,5 +1,6 @@
 .ccm-responsive-overlay  {
     display: none;
+    margin-top: -10px;
 }
 .list-inline li {
   display: inline !important;
@@ -7,7 +8,13 @@
 .ccm-responsive-overlay ul li a {
   margin: 0 0 !important;
   text-align: center;
+  text-transform: uppercase;
+  font-family: "Museo500";
 }
 .ccm-responsive-overlay ul.list-inline li a {
   width: 60px !important;
+  padding: 5px 10px !important;
+}
+.ccm-responsive-overlay {
+  border-bottom: 5px solid #00A9BA;
 }

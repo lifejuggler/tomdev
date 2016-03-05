@@ -57,7 +57,8 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   }
 }
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-item img {
-    height: 180px !important;
+    height: 166px !important;
+    /*width: 377px !important;*/
 }
 .container .mix{
   display: none;

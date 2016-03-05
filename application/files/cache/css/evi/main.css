@@ -1,4 +1,6 @@
-@import url(//fonts.googleapis.com/css?family=Titillium+Web:200,400,700,900);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:100,400,700);
+@import url(//fonts.googleapis.com/css?family=Noticia+Text:200,400,700,900);
+@import url("/~tom/tomdev/application/themes/evi/css/fonts/typography.css");
 /* Import bootstrap 3 mixins and variables so we can use them */
 /* Import core mixins so we can use them */
 .clear_float:before,
@@ -23,9 +25,9 @@ div.ccm-page {
   position: relative;
 }
 div.ccm-page {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Noticia Text;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.42857143;
   -webkit-font-smoothing: antialiased;
 }
@@ -38,39 +40,39 @@ div.ccm-page blockquote {
   line-height: 1.42857143;
 }
 div.ccm-page h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 700;
+  font-family: Roboto Slab;
+  font-size: 3.2em;
+  font-weight: 500;
   color: #ffffff;
   line-height: 1.42857143;
   text-transform: none;
 }
 div.ccm-page h2 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-family: Roboto Slab;
+  font-size: 2.2em;
+  font-weight: 500;
+  color: #ffffff;
   line-height: 1.42857143;
   text-transform: none;
 }
 div.ccm-page h3 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   font-size: 1.25em;
-  font-weight: 700;
-  color: #75ca2a;
+  font-weight: 500;
+  color: #1a5978;
   line-height: 1.42857143;
   text-transform: none;
 }
 div.ccm-page h4 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   font-size: 1.05em;
-  font-weight: 700;
+  font-weight: 500;
   color: #4f585c;
   line-height: 1.42857143;
   text-transform: none;
 }
 div.ccm-page h5 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   font-size: 0.73em;
   font-weight: 700;
   color: #9fa9ad;
@@ -78,10 +80,10 @@ div.ccm-page h5 {
   text-transform: uppercase;
 }
 div.ccm-page h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   font-size: 0.73em;
   font-weight: 400;
-  color: #a3db75;
+  color: #bbe8f1;
   line-height: 1.42857143;
   text-transform: uppercase;
 }
@@ -104,11 +106,11 @@ div.ccm-page main {
 }
 div.ccm-page main a:not(.fa):not(.btn),
 div.ccm-page footer a:not(.fa):not(.btn) {
-  color: #00a9ba;
+  color: #1aa9ba;
 }
 div.ccm-page main a:not(.fa):not(.btn):hover,
 div.ccm-page footer a:not(.fa):not(.btn):hover {
-  color: #c91b5f;
+  color: #009fef;
   text-decoration: none;
 }
 div.ccm-page div[data-container=block] div.container:last-child {
@@ -131,18 +133,18 @@ div.ccm-page header {
   border-bottom: 1px solid #d9d9d9;
 }
 div.ccm-page header #header-site-title {
-  font-family: Titillium Web;
+  font-family: Roboto Slab;
   font-weight: 400;
-  color: #75ca2a;
+  color: #1a5978;
   text-transform: none;
-  line-height: 1.15em;
-  font-size: 2.3em;
+  line-height: 1.2em;
+  font-size: 2.4em;
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 div.ccm-page header #header-site-title:hover {
-  color: #447618;
+  color: #081b24;
   text-decoration: none !important;
 }
 div.ccm-page header .ccm-search-block-form {
@@ -185,14 +187,14 @@ div.ccm-page header nav ul {
 }
 div.ccm-page header nav ul a {
   padding-right: 40px;
-  font-family: Titillium Web;
+  font-family: Roboto Slab;
   font-size: 1em;
-  font-weight: 700;
-  color: #7f7f7f;
+  font-weight: 1.1;
+  color: #adb4b9;
   text-transform: none;
 }
 div.ccm-page header nav ul a:hover {
-  color: #00a9ba;
+  color: #009fef;
   text-decoration: none;
 }
 div.ccm-page header nav ul li {
@@ -242,7 +244,7 @@ div.ccm-page header nav ul li ul li a {
   padding-bottom: 15px;
   font-size: 1.0em;
   text-transform: none;
-  color: #7f7f7f;
+  color: #a2a2a2;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -320,15 +322,15 @@ div.ccm-page .breadcrumb a {
 }
 div.ccm-page .breadcrumb a:hover {
   text-decoration: none;
-  color: #d3145a !important;
+  color: #d2135a !important;
 }
 div.ccm-page img.ccm-captcha-image {
   display: block;
   margin: 0px auto;
 }
 div.ccm-page main .ccm-search-block-form h3 {
-  font-family: Titillium Web;
-  font-size: 1em;
+  font-family: Roboto Slab;
+  font-size: 2.2em;
   text-transform: uppercase;
 }
 div.ccm-page main .ccm-search-block-form input.ccm-search-block-text {
@@ -364,10 +366,10 @@ div.ccm-page main .ccm-search-block-form #searchResults .searchResult h3 {
 div.ccm-page main .ccm-search-block-form #searchResults .searchResult h3 a {
   font-weight: 400;
   font-size: 22px;
-  color: #7f7f7f;
+  color: #adb4b9;
 }
 div.ccm-page main .ccm-search-block-form #searchResults .searchResult h3 a:hover {
-  color: #00a9ba;
+  color: #009fef;
 }
 div.ccm-page .btn {
   -webkit-border-radius: 20px;
@@ -420,7 +422,7 @@ div.ccm-page .btn-success .badge {
 div.ccm-page .btn-default {
   color: #6e6e6e;
   background-color: #e5e5e5;
-  border-color: #b7e390;
+  border-color: #afe4ff;
 }
 div.ccm-page .btn-default:hover,
 div.ccm-page .btn-default:focus,
@@ -429,7 +431,7 @@ div.ccm-page .btn-default.active,
 .open > .dropdown-togglediv.ccm-page .btn-default {
   color: #6e6e6e;
   background-color: #cccccc;
-  border-color: #97d75f;
+  border-color: #72cfff;
 }
 div.ccm-page .btn-default:active,
 div.ccm-page .btn-default.active,
@@ -452,7 +454,7 @@ div.ccm-page .btn-default.disabled.active,
 div.ccm-page .btn-default[disabled].active,
 fieldset[disabled] div.ccm-page .btn-default.active {
   background-color: #e5e5e5;
-  border-color: #b7e390;
+  border-color: #afe4ff;
 }
 div.ccm-page .btn-default .badge {
   color: #e5e5e5;
@@ -466,7 +468,7 @@ div.ccm-page div.block-sidebar-padded p {
 }
 div.ccm-page div.block-sidebar-wrapped {
   padding: 25px 40px 25px 40px;
-  background-color: #f8faf1;
+  background-color: #dfecf2;
   font-size: 0.85em;
 }
 div.ccm-page div.block-sidebar-wrapped h3 {
@@ -479,7 +481,7 @@ div.ccm-page div.block-sidebar-wrapped a {
 }
 div.ccm-page div.block-sidebar-wrapped a:hover {
   text-decoration: none;
-  color: #d3145a !important;
+  color: #d2135a !important;
 }
 div.ccm-page div.block-sidebar-wrapped div.ccm-block-page-list-page-entry {
   padding-bottom: 0px;
@@ -548,26 +550,26 @@ div.ccm-page div.blog-entry-list div.ccm-block-page-list-date {
 }
 div.ccm-page div.blog-entry-list div.ccm-block-page-list-title {
   margin: 0px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-family: Roboto Slab;
+  font-size: 2.2em;
+  font-weight: 500;
+  color: #ffffff;
   line-height: 1.42857143;
   text-transform: none;
 }
 div.ccm-page div.blog-entry-list div.ccm-block-page-list-title a {
-  color: #1a1a1a;
+  color: #ffffff;
 }
 div.ccm-page div.blog-entry-list div.ccm-block-page-list-title a:hover {
   text-decoration: none;
-  color: #7f7f7f;
+  color: #adb4b9;
 }
 div.ccm-page div.recent-blog-entry div.ccm-block-page-list-title {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 700;
+  font-family: Roboto Slab;
+  font-size: 2.2em;
+  font-weight: 500;
   color: #4f585c;
   line-height: 1.42857143;
   text-transform: none;
@@ -585,7 +587,7 @@ div.ccm-page div.recent-blog-entry div.ccm-block-page-list-page-entry {
   padding-bottom: 0px;
 }
 div.ccm-page div.area-content-accent {
-  background-color: #f8faf1;
+  background-color: #dfecf2;
   margin-top: 80px;
   padding: 65px 0px 65px 0px;
   /*
@@ -598,7 +600,7 @@ div.ccm-page div.area-content-accent {
 div.ccm-page div.area-content-accent .title-caps,
 div.ccm-page div.area-content-accent .title-caps-bold,
 div.ccm-page div.area-content-accent h3 {
-  color: #988e47 !important;
+  color: #6b95b2 !important;
 }
 div.ccm-page div.testimonial-bio {
   margin-bottom: 60px;
@@ -683,7 +685,7 @@ div.ccm-page div.ccm-block-feature-item {
 }
 div.ccm-page div.ccm-block-feature-item h4,
 div.ccm-page div.ccm-block-feature-item i {
-  color: #75ca2a;
+  color: #1a5978;
 }
 div.ccm-page div.ccm-block-feature-item i {
   position: absolute;
@@ -692,13 +694,13 @@ div.ccm-page div.ccm-block-feature-item i {
 }
 div.ccm-page div.feature-home-page div.ccm-block-feature-item h4,
 div.ccm-page div.feature-home-page div.ccm-block-feature-item i {
-  color: #1a1a1a;
+  color: #1a5978;
 }
 div.ccm-page div.feature-home-page div.ccm-block-feature-item h4 {
   font-size: 1.5em;
 }
 div.ccm-page div.feature-home-page div.ccm-block-feature-item i {
-  color: #1a1a1a;
+  color: #1a5978;
   font-size: 1.3em;
   top: 1px;
 }
@@ -737,8 +739,8 @@ div.ccm-page div.ccm-block-feature-item-hover div.ccm-block-feature-item-hover-i
 }
 div.ccm-page div.ccm-block-feature-item-hover div.ccm-block-feature-item-hover-icon i {
   margin-top: 3px;
-  color: #7f7f7f;
-  font-size: 2em;
+  color: #adb4b9;
+  font-size: 3.2em;
 }
 @media (min-width: 768px) {
   div.ccm-page div.ccm-block-feature-item-hover div.ccm-block-feature-item-hover-icon {
@@ -759,8 +761,8 @@ div.ccm-page div.ccm-block-feature-item-hover div.ccm-block-feature-item-hover-i
   }
 }
 div.ccm-page div.ccm-block-feature-item-hover-wrapper:hover div.ccm-block-feature-item-hover-icon {
-  background: #e5e5e5;
-  border: 1px solid #cccccc;
+  background: #ffffff;
+  border: 1px solid #ffffff;
 }
 div.ccm-page .ccm-image-slider-container {
   border-bottom: 2px solid #f0eee1;
@@ -901,12 +903,12 @@ div.ccm-page .ccm-image-slider-container .rslides_tabs li {
   margin-right: 5px;
 }
 div.ccm-page .ccm-image-slider-container .rslides_tabs li.rslides_here a {
-  background: #75ca2a;
+  background: #009fef;
 }
 div.ccm-page .ccm-image-slider-container .rslides_tabs li a {
   overflow: hidden;
   text-indent: 99px;
-  background: #ffffff;
+  background: #60aacc;
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -917,15 +919,15 @@ div.ccm-page .ccm-image-slider-container .rslides_tabs li a {
   -ms-border-radius: 30px;
 }
 div.ccm-page .ccm-image-slider-container .ccm-image-slider-text h2 {
-  color: #75ca2a;
-  font-family: Titillium Web;
+  color: #1a5978;
+  font-family: Roboto Slab;
   font-size: 3.2em;
-  font-weight: 200;
+  font-weight: 100;
   margin-bottom: 5%;
 }
 div.ccm-page .ccm-image-slider-container .ccm-image-slider-text p {
-  color: #6e6e6e;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-family: Noticia Text;
   font-size: 1.1em;
   font-weight: 400;
   width: 80%;
@@ -963,7 +965,7 @@ div.ccm-page .image-circle .ccm-image-block {
   border-radius: 50%;
 }
 div.ccm-page div.ccm-block-next-previous-header {
-  font-size: 15px;
+  font-size: 14px;
 }
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry {
   border-bottom: 0px;
@@ -971,13 +973,13 @@ div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry {
   margin-bottom: 0px;
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid #dfecf2;
 }
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry div.ccm-block-page-list-title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   font-size: 1.25em;
-  font-weight: 700;
-  color: #75ca2a;
+  font-weight: 500;
+  color: #1a5978;
   line-height: 1.42857143;
   text-transform: none;
 }
@@ -996,7 +998,7 @@ div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm
   display: inline-block;
   color: #6e6e6e;
   background-color: #e5e5e5;
-  border-color: #b7e390;
+  border-color: #afe4ff;
 }
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more:hover,
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more:focus,
@@ -1005,7 +1007,7 @@ div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm
 .open > .dropdown-togglediv.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more {
   color: #6e6e6e;
   background-color: #cccccc;
-  border-color: #97d75f;
+  border-color: #72cfff;
 }
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more:active,
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more.active,
@@ -1028,7 +1030,7 @@ div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more[disabled].active,
 fieldset[disabled] div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more.active {
   background-color: #e5e5e5;
-  border-color: #b7e390;
+  border-color: #afe4ff;
 }
 div.ccm-page div.page-list-with-buttons div.ccm-block-page-list-page-entry a.ccm-block-page-list-read-more .badge {
   color: #e5e5e5;
@@ -1083,7 +1085,7 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   }
 }
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-page-entry-grid-thumbnail-hover {
-  background-color: rgba(0, 169, 186, 0.7);
+  background-color: rgba(26, 169, 186, 0.7);
 }
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper i.ccm-block-page-list-page-entry-grid-thumbnail-icon {
   display: block;
@@ -1095,9 +1097,9 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper i.ccm-block-page-lis
 }
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-title {
   margin-top: 30px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   font-size: 1.05em;
-  font-weight: 700;
+  font-weight: 500;
   color: #4f585c;
   line-height: 1.42857143;
   text-transform: none;
@@ -1107,7 +1109,7 @@ div.ccm-page a.ccm-block-page-list-rss-feed {
   color: #d1d1d1;
 }
 div.ccm-page a.ccm-block-page-list-rss-feed:hover {
-  color: #75ca2a;
+  color: #009fef;
 }
 div.ccm-page div.ccm-block-page-list-page-entry-horizontal:before,
 div.ccm-page div.ccm-block-page-list-page-entry-horizontal:after {
@@ -1129,7 +1131,7 @@ div.ccm-page div.ccm-block-page-list-page-entry-read-more {
 div.ccm-page div.ccm-block-page-list-no-pages {
   text-align: center;
   font-size: 1.25em;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   color: #9fa9ad;
 }
 div.ccm-page div.col-sidebar div.block-sidebar-wrapped div.ccm-block-page-list-wrapper {
@@ -1151,7 +1153,7 @@ div.ccm-page div.col-sidebar div.ccm-block-page-list-wrapper div.ccm-block-page-
   font-weight: normal;
 }
 div.ccm-page div.ccm-block-page-list-header {
-  font-size: 15px;
+  font-size: 14px;
 }
 div.ccm-page div.ccm-block-page-attribute-display-wrapper {
   border-top: 1px solid #bfbfbf;
@@ -1167,8 +1169,8 @@ div.ccm-page div.ccm-block-page-attribute-display-wrapper:last-child {
   border-bottom: 1px solid #bfbfbf;
 }
 div.ccm-page h1.page-title {
-  color: #75ca2a;
-  font-family: Titillium Web;
+  color: #1a5978;
+  font-family: Roboto Slab;
   font-size: 1.73em;
   line-height: 1.42857143;
   font-weight: 700;
@@ -1177,9 +1179,9 @@ div.ccm-page h1.page-title {
   padding-top: 30px;
 }
 div.ccm-page.page-type-portfolio-project h1.page-title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 700;
+  font-family: Roboto Slab;
+  font-size: 3.2em;
+  font-weight: 500;
   color: #ffffff;
   line-height: 1.42857143;
   text-transform: none;
@@ -1192,9 +1194,9 @@ div.ccm-page div.ccm-block-page-title-byline {
   margin-bottom: 40px;
 }
 div.ccm-page div.ccm-block-page-title-byline h1.page-title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 700;
+  font-family: Roboto Slab;
+  font-size: 3.2em;
+  font-weight: 500;
   color: #ffffff;
   line-height: 1.42857143;
   text-transform: none;
@@ -1250,9 +1252,9 @@ div.ccm-page div.ccm-block-testimonial img {
   -ms-border-radius: 50%;
 }
 div.ccm-page div.ccm-block-testimonial div.ccm-block-testimonial-name {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto Slab;
   font-size: 1.05em;
-  font-weight: 700;
+  font-weight: 500;
   color: #4f585c;
   line-height: 1.42857143;
   text-transform: none;
@@ -1288,7 +1290,7 @@ div.ccm-page div.col-sidebar div.ccm-block-tags-wrapper {
   margin: 25px 40px 25px 40px;
 }
 div.ccm-page div.ccm-block-tags-header {
-  font-size: 15px;
+  font-size: 14px;
 }
 div.ccm-page div.ccm-block-tags-wrapper a:hover {
   text-decoration: none;
@@ -1301,14 +1303,14 @@ div.ccm-page span.ccm-block-tags-tag {
   color: #6e6e6e;
 }
 div.ccm-page div.ccm-block-tags-wrapper a:hover span.ccm-block-tags-tag {
-  border-color: #75ca2a;
+  border-color: #009fef;
 }
 div.ccm-page div.col-sidebar div.ccm-block-topic-list-wrapper {
   margin: 25px 40px 25px 40px;
   font-size: .85em;
 }
 div.ccm-page div.ccm-block-topic-list-header {
-  font-size: 15px;
+  font-size: 14px;
 }
 div.ccm-page ul.ccm-block-topic-list-page-topics {
   list-style-type: none;
@@ -1327,7 +1329,7 @@ div.ccm-page div.col-sidebar div.ccm-block-date-navigation-wrapper {
   font-size: .85em;
 }
 div.ccm-page div.ccm-block-date-navigation-header {
-  font-size: 15px;
+  font-size: 14px;
 }
 div.ccm-page ul.ccm-block-date-navigation-dates {
   list-style-type: none;
@@ -1355,7 +1357,7 @@ div.ccm-page div.ccm-block-calendar-event-list-event-date {
   height: 50px;
   float: left;
   margin-right: 10px;
-  border: 1px solid #f8faf1;
+  border: 1px solid #dfecf2;
 }
 div.ccm-page div.ccm-block-calendar-event-list-event-date span {
   display: block;
@@ -1363,8 +1365,8 @@ div.ccm-page div.ccm-block-calendar-event-list-event-date span {
 }
 div.ccm-page div.ccm-block-calendar-event-list-event-date span:first-child {
   font-weight: bold;
-  background-color: #f8faf1;
-  color: #988e47;
+  background-color: #dfecf2;
+  color: #6b95b2;
 }
 div.ccm-page div.ccm-block-calendar-event-list-event {
   padding-bottom: 10px;
@@ -1374,8 +1376,8 @@ div.ccm-page main .jumbo {
   min-height: 300px;
 }
 div.ccm-page main .jumbo h1 {
-  color: #75ca2a !important;
-  font-family: Titillium Web !important;
+  color: #1a5978 !important;
+  font-family: Roboto Slab !important;
   font-size: 2.46em !important;
   line-height: 1.14285714;
   font-weight: 200 !important;
@@ -1385,30 +1387,30 @@ div.ccm-page main .jumbo h1 {
   padding-bottom: 40px;
 }
 div.ccm-page main .jumbo p {
-  font-size: 1em;
+  font-size: 2.2em;
   color: #4f585c;
   font-weight: 200;
 }
 /* comes outside of main because we want to show it in redactor */
 .title-thin {
-  color: #75ca2a !important;
-  font-family: Titillium Web !important;
+  color: #1a5978 !important;
+  font-family: Roboto Slab !important;
   font-size: 2.46em !important;
   line-height: 1.14285714;
   font-weight: 200 !important;
   display: block;
 }
 .title-caps-bold {
-  color: #75ca2a !important;
-  font-family: Titillium Web !important;
+  color: #1a5978 !important;
+  font-family: Noticia Text !important;
   font-size: 1.73em !important;
   line-height: 2.47142857em !important;
   font-weight: 700 !important;
   text-transform: uppercase;
 }
 .title-caps {
-  color: #75ca2a !important;
-  font-family: Titillium Web !important;
+  color: #1a5978 !important;
+  font-family: Noticia Text !important;
   font-size: 1.73em !important;
   line-height: 2.47142857em !important;
   font-weight: 300;
@@ -1426,7 +1428,7 @@ footer#footer-theme a {
   color: #ffffff;
 }
 footer#footer-theme a:hover {
-  color: #d3145a;
+  color: #d2135a;
 }
 footer#footer-theme div.ccm-block-social-links {
   text-align: right;
@@ -1435,24 +1437,24 @@ footer#footer-theme div.ccm-block-social-links ul a {
   color: #d1d1d1;
 }
 footer#footer-theme div.ccm-block-social-links ul a:hover {
-  color: #75ca2a;
+  color: #009fef;
 }
 footer#footer-theme section {
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid #dfecf2;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 footer#footer-theme section:first-child {
-  background-color: #ffffff;
+  background-color: #1aa9ba;
 }
 footer#footer-theme section:last-child {
   padding-bottom: 30px;
   background-color: #1aa9ba;
 }
 footer#footer-theme #footer-site-title {
-  font-family: Titillium Web;
+  font-family: Roboto Slab;
   font-weight: 900;
-  color: #75ca2a;
+  color: #1a5978;
   text-transform: uppercase;
   font-size: 1.2em;
   -webkit-transition: color 0.2s linear;
@@ -1460,7 +1462,7 @@ footer#footer-theme #footer-site-title {
   transition: color 0.2s linear;
 }
 footer#footer-theme #footer-site-title:hover {
-  color: #447618;
+  color: #081b24;
   text-decoration: none !important;
 }
 footer#concrete5-brand {
@@ -1484,7 +1486,7 @@ footer#concrete5-brand a:hover {
   background: white;
   display: none;
   position: absolute;
-  border-bottom: 5px solid #75ca2a;
+  border-bottom: 5px solid #1a5978;
   width: 100%;
   z-index: 99;
   top: 120px;
@@ -1513,7 +1515,7 @@ footer#concrete5-brand a:hover {
   text-decoration: inherit;
 }
 .ccm-responsive-overlay ul li a {
-  color: #7f7f7f;
+  color: #adb4b9;
   font-size: 18px;
   display: inline-block;
   width: 80%;
@@ -1525,7 +1527,7 @@ footer#concrete5-brand a:hover {
   text-decoration: none;
 }
 .ccm-responsive-overlay ul li a:hover {
-  color: #00a9ba;
+  color: #009fef;
 }
 .ccm-responsive-overlay ul li ul li {
   padding-left: 10px;
@@ -1545,7 +1547,7 @@ footer#concrete5-brand a:hover {
 }
 .ccm-responsive-menu-launch.responsive-button-close i:after {
   font-size: 20px;
-  color: #7f7f7f;
+  color: #adb4b9;
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
@@ -1558,7 +1560,7 @@ footer#concrete5-brand a:hover {
   font-size: 20px;
   content: "\f0c9";
   font-family: FontAwesome;
-  color: #7f7f7f;
+  color: #adb4b9;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
@@ -1585,5 +1587,5 @@ footer#concrete5-brand a:hover {
  * otherwise we can't both map the stylesheet to them AND the customizer to them
  */
 .ccm-image-slider-container {
-  background-image: url('/~tom/evi/application/themes/evi/images/background-slider-default.png');
+  background-image: url('/~tom/tomdev/application/themes/evi/images/background-slider-blue-sky.png');
 }
