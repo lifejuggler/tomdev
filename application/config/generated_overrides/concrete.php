@@ -2,9 +2,9 @@
 
 /**
  * -----------------------------------------------------------------------------
- * Generated 2015-11-08T18:29:23-05:00
+ * Generated 2016-03-05T00:28:50-05:00
  *
- * @item      misc.do_page_reindex_check
+ * @item      misc.latest_version
  * @group     concrete
  * @namespace null
  * -----------------------------------------------------------------------------
@@ -16,7 +16,7 @@ return array(
         'access_entity_updated' => 1442250717,
         'do_page_reindex_check' => false,
         'user_timezones' => true,
-        'latest_version' => '5.7.5.1',
+        'latest_version' => '5.7.5.6',
     ),
     'permissions' => array(
         'model' => 'advanced',

@@ -3,6 +3,47 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+/* Utility Styles */
+.museo700 {
+    font-family: "Museo700" !important;
+}
+.museo500 {
+    font-family: "Museo500" !important;
+}
+.museo300 {
+    font-family: "Museo300" !important;
+}
+.open-sans {
+    font-family: "Open Sans", sans-serif !important;
+}
+.uppercase {
+  text-transform: uppercase !important;    
+}
+.capitalize {
+  text-transform: capitalize !important;
+}
+.body-text p {
+  color: #4C4C4C;
+}
+.body-text h4 {
+  color: #1AA9BA !important;
+  font-family: "Museo500" !important;
+  font-size: 1.5em !important;
+}
+/* headings */
+h1 {
+  font-family: "Museo500" !important;
+}
+h2 {
+  font-family: "Museo500" !important;
+}
+h3 {
+  font-family: "Museo500" !important;
+}
+.text-center {
+  text-align: center;
+}
+/* Header */
 .row {
   margin: 0 !important;
 }
@@ -24,13 +65,18 @@ hr {
 main {
   padding-bottom: 0px !important;
 }
-
+.header-social-bar .social-title p {
+  font-family: "Museo500";
+  font-size: 1em;
+  color: #cacaca;
+}
 /* Sidebar */
 #fixed-sidebar {
   position: fixed;
   z-index: 20;
   background: white;
   height: 100%;
+  top: 0px;
 }
 #fixed-sidebar img{
   width: 140px;
@@ -41,7 +87,6 @@ main {
 }
 /* Sidebar Nav Button Style Overrides */
 #fixed-sidebar .nav {
-  text-transform: uppercase;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -51,7 +96,6 @@ main {
 #fixed-sidebar .nav>li>a {
   color: #7F7F7F !important;
   font-size: 1.3em;
-  font-family: "Museo500";
 }
 #fixed-sidebar .nav>li>a:hover, .nav>li>a:focus {
   color: #00A9BA !important;
@@ -59,7 +103,6 @@ main {
 }
 #fixed-sidebar .social-title {
   color: #cacaca;
-  font-family: "Museo500";
 }
 
 /* Content Button Overrides */
@@ -68,10 +111,8 @@ main {
   padding-bottom: 20px;
 }
 .content-link {
-  text-transform: uppercase;
   display: inline;
   font-size: 1.2em;
-  font-family: "Museo500";
   background: url("../images/arrow_blue.png") no-repeat right center; 
   background-size: 25px;
   padding: 5px 30px 5px 0;
@@ -81,20 +122,30 @@ main {
   background-size: 25px;
 }
 /* Main Banner */
+.main-banner-icon {
+  width: 215px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+.main-banner {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background-size: 100%;
+}
 .hp-banner-link-block {
   text-align: center;
 }
 .hp-banner-link {
   padding: 5px;
-  text-transform: uppercase;
   display: inline;
-  font-size: 1.5em;
   color: white !important;
+  font-size: 1.2em;
   text-align: center;
-  font-family: "Museo500";
   background: url("../images/arrow_white_forward.png") no-repeat right center; 
   background-size: 25px; 
-  padding: 5px 30px 5px 0;
+  padding: 15px 30px 15px 0px;
 }
 .hp-banner-link:hover {
   color: #cdde63 !important;
@@ -104,15 +155,15 @@ main {
 /* Main Content */
 .col-content {
   z-index: 10;
-  left: 16.7%;
-  width: 83.2% !important;
+  left: 16%;
+  width: 84% !important;
   padding:0 !important;
   color: #4C4C4C;
-  font-family: "Open Sans";
 }
 .top-banner {
   margin-bottom: 60px;
-  background-size: 100% 130%;
+  background-size: 100% 100%;
+  background-size: cover;
 }
 .top-banner img{
     width: 200px;
@@ -120,26 +171,30 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+.top-banner-contact img{
+    width: 140px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .col-content .main-top-banner h1{
-  font-family: "Museo500";
+  font-weight: normal !important;
   color: white;
 }
 .col-content .main-top-banner h2{
-    font-family: "Museo500";
-    color: white;
+  font-weight: normal !important;
+  color: white;
 }
 .col-content .top-banner h1 {
-    font-size: 4.0em;
-    text-align: center;
-    padding-top: 50px;
-    font-family: "Museo500";
-    color: white;
+  font-size: 4.0em;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
 }
 .col-content .top-banner h2 {
-    font-size: 3.0em;
-    text-align: center;
-    font-family: "Museo500";
-    color: white;
+  font-size: 3.0em;
+  text-align: center;
+  color: white;
 }
 .tag-box {
   margin-left: auto !important;
@@ -149,47 +204,52 @@ main {
 .tag-box h3 {
 
 }
-.main-top-banner {
-  background-size: 100%;
+.col-content .main-top-banner h1{
+
+    color: white;
 }
-.col-content .ccm-custom-style-container{
- /*height: 378px;*/
- /*margin-top: -21px;*/
+.col-content .main-top-banner h2{
+
+    color: white;
 }
 .col-content .ccm-custom-style-container img{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.col-content .main-body h1 {
-    font-family: "Museo300";
-    color: #00A9BA;
-    font-size: 3em;
+.ccm-block-page-list-title {
+  font-family: open-sans, sans-serif !important; 
 }
-.col-content .main-body h2 {
-    font-size: 2.2em;
-    font-family: "Museo500";
+.main-body {
+  font-family: open-sans, sans-serif !important;
+  font-size: 1.1em;
+  font-weight: 400;
 }
-.col-content .main-body h3 {
-    font-size: 1.8em;
-    text-align: left;
-    color: #00A9BA;
-    font-family: "Museo300";
+.main-body h1 {
+  color: #00A9BA !important;
+  font-size: 3em;
 }
-.col-content .main-body h4 {
-    font-size: 1.2em;
-    font-family: "Museo300";
-    color: #00A9BA;
+.main-body h4 {
+  color: #00A9BA;
+  float: left;
+  text-align: left;
+}
+.col-content .hp-text-block {
+  float: left;
+}
+.col-content .main-body {
+  float: left;
 }
 .col-content .hp-text-block h4 {
-    font-size: 3em;
-    font-family: "Museo300";
-    color: #1AA9BA;
+  font-size: 3em
+  color: #1AA9BA;
+  float: left;
+}
+.col-content .hp-text-block p { 
+  float: left;
 }
 .col-content h5 {
     font-size: 1.4em;
     padding-top: 50px;
-    font-family: "Museo300";
 }
 .ccm-imageblock {
   width: 100% !important;
@@ -204,7 +264,7 @@ main {
 .hp-content-pic-right img{
     margin-left: auto;
     margin-right: auto;
-    width: 100% !important;
+    width: 340px;
 }
 
 .hp-content-pic-left {
@@ -223,24 +283,23 @@ main {
 .about-right-box {
   padding-bottom: 60px;
 }
-.about-right-box .about-profile-pic img{
-  padding-top: 40px;
+.about-right-box h3 {
+  font-size: 1.8em !important;
+  color: #00A9BA !important;
 }
 /* Mainbody Approach Page*/
 #approach-quote {
-  font-family: "Museo500";
   color: #A1A1A1;
   font-size: 34px;
 }
 #quote-speaker {
-  font-family: "Museo500";
   color: #1aa9b9;
   font-size: 20px;
 }
 /* Mainbody Portfolio Page*/
 div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-list-title {
-  font-family: "Open Sans" !important;
   font-style: normal;
+  font-weight: normal !important;
 }
 /* Portfolio Portfolio Detail Page*/
 div.ccm-page h1.page-title {
@@ -256,10 +315,8 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 .thumb-grid-link a{
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
   display: inline;
   font-size: 1em;
-  font-family: "Museo500";
   background: url("../images/arrow_grey.png") no-repeat right center; 
   background-size: 25px;
   padding: 5px 30px 5px 0;
@@ -270,17 +327,15 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
   background-size: 25px;
 }
 .portfolio-back-link {
-  /*text-transform: uppercase;*/
   display: inline;
   font-size: 2em;
-  color: white !important;
   text-align: center;
   vertical-align: middle;
-  font-family: "Museo500";
   background: url("../images/arrow_white.png") no-repeat left center; 
   background-size: 25px; 
   padding: 5px 0px 5px 35px;
   margin: auto 0;
+  color: white !important;
 }
 .portfolio-back-link:hover {
   color: #cdde63 !important;
@@ -292,11 +347,9 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 .portfolio-links {
   cursor: pointer;
   text-align: center;
-  font-family: "Museo500";
 }
 .pd-body h1 {
   padding-left: 15px;
-  font-family: "Museo500" !important;
   color: #1AA9BA !important;
 }
 
@@ -314,6 +367,9 @@ div.ccm-page .ccm-image-slider-container {
 .rslides_tabs {
   float: left;
 }
+.rslides-here .thumbnail {
+  width: 100% !important;
+}
 .pd-title h1.page-title {
   text-transform: capitalize !important;
 }
@@ -330,7 +386,6 @@ div.ccm-page .ccm-image-slider-container {
   border: none;
 }
 .ccm-block-page-attribute-display-title {
-  text-transform: uppercase;
   color: #1AA9BA;
   padding-right: 5px;
 }
@@ -350,6 +405,10 @@ div.ccm-page .ccm-image-slider-container {
   border-radius: 5px !important;
   padding: 5px 30px 5px 30px !important;
   font-size: 1.2em;
+  border-color: #1aa9b9;
+}
+.btn-primary {
+  border-color: #1aa9b9;
 }
 /* Social Links Override */
 .side-social-box {
@@ -380,7 +439,6 @@ div.ccm-page .ccm-image-slider-container {
 } 
 .side-social-box p {
   color: #CBCBCB;
-  font-family: "Museo500";
 }
 /* Footer Styles */
 #footer-theme {
@@ -389,13 +447,11 @@ div.ccm-page .ccm-image-slider-container {
 }
 #footer-theme .container{
  margin-left: 17%;
- width: 70%;  
- font-family: "Open Sans";
+ width: 70%; 
 }
 #footer-theme section {
   padding-top: 10px !important;
   padding-bottom: 0px !important;
-  font-family: "Open Sans";
 }
 
 /* Footer Nav Button Style Overrides */
@@ -406,7 +462,6 @@ div.ccm-page .ccm-image-slider-container {
 #footer-theme .nav li {
   display:inline !important;
   float: left;
-  text-transform: uppercase;
 
 }
 #footer-theme .nav>li>a:hover, .nav>li>a:focus {
@@ -430,6 +485,7 @@ div.ccm-page div.ccm-block-page-list-thumbnail-grid-wrapper div.ccm-block-page-l
 div.ccm-page .breadcrumb a.filter.active {
   color: #1aa9b9 !important;
 }
+
 /* Dimension Specific */
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -438,8 +494,16 @@ div.ccm-page .breadcrumb a.filter.active {
     padding: 0px 15px;
   }
   /* Main Page Top Banner */
+  .main-banner {
+    height:350px;
+    margin-bottom: 60px;
+  }
+  .top-banner {
+    height: 310px;
+    width: 1165px;
+  }
   .top-banner h1{
-      margin-top: -1px;
+    margin-top: -1px;
   }
   /* Main Top Banner */
   .col-content .main-top-banner {
@@ -457,16 +521,12 @@ div.ccm-page .breadcrumb a.filter.active {
   .col-content .main-top-banner h1{
       font-size: 5.0em;
       margin-bottom: 0px;
-      font-family: "Museo500";
-      color: white;
   }
   .col-content .main-top-banner h2{
       font-size: 3.0em;
       padding-top: 0px;
       margin-top: 0px;
       padding-bottom: 50px;
-      font-family: "Museo500";
-      color: white;
   }
   .col-content .portfolio-text .hp-text-block {
       padding-top: 30px;
@@ -502,6 +562,7 @@ div.ccm-page .breadcrumb a.filter.active {
   /* portfolio portfolio detail page */
   .pd-body {
     padding: 0 20px 0 20px;
+    width: 90%;
   }
   .pd-body h1{
     font-size: 2.5em !important;
@@ -525,12 +586,9 @@ div.ccm-page .breadcrumb a.filter.active {
     min-height: 650px;
   }
   .rslides {
-    width: 77% !important;
-    margin-left: -80px !important;
+    width: 75% !important;
+    margin-left: -20px !important;
     padding-bottom: 100px;
-  }
-  .rslides-here .thumbnail {
-    width: 100% !important;
   }
   #gallery-slider {
     margin-left: 20px;
@@ -540,7 +598,10 @@ div.ccm-page .breadcrumb a.filter.active {
   div.ccm-page .ccm-image-slider-container {
     border-bottom: none !important;
   }
-  .rslides {
+  .portfolio-detail-row {
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .ccm-image-slider-container {
     background: #E5E5E5 !important;
@@ -562,13 +623,16 @@ div.ccm-page .breadcrumb a.filter.active {
     padding-right: 50px;
   }
   .about-right-box .about-profile-pic img{
-    padding-top: 40px;
+    padding-top: 27.5px;
     width: 240px;
   }
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .main-body {
+    padding-left: 60px;
+  }
   .content-link-block.portfolio {
     width: 70%;
   }
@@ -581,9 +645,14 @@ div.ccm-page .breadcrumb a.filter.active {
   .main-top-banner {
     padding-top: 40px !important;
   }
-  .hp-content-pic-right.porfolio {
-    padding-top: 60px !important;
-    width: 100% !important;
+  .top-banner {
+    height: 310px;
+  }
+  .hp-content-pic-right img {
+    width: 200px !important;
+  }
+  .hp-content-pic-left img {
+    width: 200px !important;
   }
   .hp-content-pic-left {
     width: 80% !important;
@@ -591,7 +660,7 @@ div.ccm-page .breadcrumb a.filter.active {
     padding-top: 50px;
   }
   .hp-content-pic-right.questions {
-    padding-top: 60px !important;
+    padding-top: 20px !important;
     width: 100% !important;
   }
   .about-right-box .about-profile-pic img{
@@ -607,14 +676,18 @@ div.ccm-page .breadcrumb a.filter.active {
   h1 {
     margin-top: 0;
   }
+  .about-body {
+    margin-top: 40px;
+  }
+
   .col-content .main-top-banner h1{
-    font-size: 5.0em;
+    font-size: 3.0em;
     margin-bottom: 0px;
     font-weight: 500 !important;
     color: white;
   }
   .col-content .main-top-banner h2{
-      font-size: 3.0em;
+      font-size: 2.0em;
       padding-top: 0px;
       margin-top: 0px;
       padding-bottom: 30px;
@@ -676,17 +749,19 @@ div.ccm-page .breadcrumb a.filter.active {
   #fixed-sidebar .nav>li>a {
     color: #7F7F7F !important;
     font-size: 1.0em;
-    font-family: "Museo500";
     padding: 0 !important;
   }
   .col-content .hp-text-block h4 {
     font-size: 2.5em;
   }
-  .main-top-banner h1 {
+  .main-banner h1 {
     font-size: 3.0em !important;
   }
-  .main-top-banner h2 {
+  .main-banner h2 {
     font-size: 2.0em !important;
+  }
+  .top-banner img {
+    width: 50%;
   }
   .hp-banner-link-block {
     padding: 10px 0 10px 0;
@@ -704,7 +779,7 @@ div.ccm-page .breadcrumb a.filter.active {
     width: 95%;
   }
   .hp-content-link-block.questions {
-    width: 50%;
+    width: 60%;
   }
   .hp-content-pic-right.questions {
     padding-top: 50px !important;
@@ -732,9 +807,6 @@ div.ccm-page .breadcrumb a.filter.active {
     width: 70% !important;
     margin-left: -10px !important;
   }
-  .rslides-here .thumbnail {
-    width: 100% !important;
-  }
   #gallery-slider {
     margin-left: 20px;
     margin-right: -20px;
@@ -759,15 +831,15 @@ div.ccm-page .breadcrumb a.filter.active {
   /* Mobile header */
   #mobile-header-bar-logo {
     text-align: center;
-    height: 50px;
+    height: 40px;
     background-color: white;
   }
   #mobile-header-bar-logo .center-header-logo {
-    height: 50px;
+    height: 40px;
   }
   #mobile-header-bar-logo #top-header-logo {
     display: inline-block;
-    font-family: "Museo500";
+
     font-size: 1.2em;
     vertical-align: middle;
     color:#00AABC;
@@ -812,8 +884,6 @@ div.ccm-page .breadcrumb a.filter.active {
   }
   .col-content .row {
     padding: 0;
-  }
-  .main-top-banner {
   }
   .hp-text-block {
     margin-top: 20px;
@@ -923,9 +993,6 @@ div.ccm-page .breadcrumb a.filter.active {
     width: 77% !important;
     margin-left: -10px !important;
   }
-  .rslides-here .thumbnail {
-    width: 100% !important;
-  }
   #gallery-slider {
     margin-left: 20px;
     margin-right: -20px;
@@ -950,24 +1017,23 @@ div.ccm-page .breadcrumb a.filter.active {
   .hp-content-pic-right img {
     margin: 0;
   }
-  .content-link {
-  }
 }
 
 /* Portrait phones and smaller */
+
 @media (max-width: 480px) {
   /* Mobile header */
   #mobile-header-bar-logo {
     text-align: center;
-    height: 50px;
+    height: 40px;
     background-color: white;
   }
   #mobile-header-bar-logo .center-header-logo {
-    height: 50px;
+    height: 40px;
   }
   #mobile-header-bar-logo #top-header-logo {
     display: inline-block;
-    font-family: "Museo500";
+
     font-size: 1.2em;
     vertical-align: middle;
     color:#00AABC;
@@ -975,13 +1041,24 @@ div.ccm-page .breadcrumb a.filter.active {
     letter-spacing: 2px;
   }
   .header-social-bar {
-    margin-right: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-body h1 {
+    font-size:2.2em !important;
+    padding-top: 1em;
+  }
+  .main-body h2 {
+  }
+  .main-body h3 {
   }
   .ccm-responsive-overlay {
     top: 45px !important;
     text-align: center;
     padding-left: 0 !important;
   }
+
   /* Fixed Side Bar*/
   #fixed-sidebar {
     display: none;
@@ -989,6 +1066,7 @@ div.ccm-page .breadcrumb a.filter.active {
   header {
     display: initial;
   }
+
   /* Main Banner */
   .hp-banner-link-block {
     margin:auto;
@@ -998,36 +1076,56 @@ div.ccm-page .breadcrumb a.filter.active {
     left: 0;
     width: 100%;
   }
-  h1 {
-    margin-top: 0;
-  }
   /* Mainbody */
-  .main-top-banner {
+  .top-banner {
+    margin-bottom: 60px;
+    background-size: 100% 100%;
+    width: 100% !important;
+  }
+  .main-banner h1{
+    font-size: 3em !important;
+  }
+  .top-banner img{
+    width: 50%;
+  }
+  .main-banner {
     padding-bottom: 40px;
     background-size: 1000px 600px;
     right: 0;
     background-position: 80% 50%;
+    text-align: center;
   }
-  .col-content .main-top-banner h1{
-    padding: 80px 20px 0px 20px;
+  .col-content .main-top-banner {
+    padding: 20px 20px 0px 20px;
     display: block;
     font-size: 3em !important;
     margin-bottom: 0px;
     color: white;
+    text-align: left;
+  }
+  .col-content .main-top-banner h1{
+    padding: 20px 20px 0px 20px;
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    color: white;
+    text-align: left;
   }
   .col-content .main-top-banner h2{
     padding: 10px 20px 50px 20px;
-    font-size: 2em;
+    font-size: 1em;
     margin-bottom: 20px;
     margin-top:5px;
     padding-bottom: 5px;
     color: white;
   }
+  .col-content .hp-text-block h4 {
+    text-align: left;
+  }
   .col-content .main-body h4 {
-      padding-top: 50px;
-      font-size: 2.2em !important;
-      font-family: "Museo300";
-      color: #00A9BA;
+    padding-top: 50px;
+    font-size: 2.2em !important;
+    color: #00A9BA;
   }
   .contact-top-content {
     margin: 0 15px;
@@ -1042,6 +1140,19 @@ div.ccm-page .breadcrumb a.filter.active {
   .about-right-box .about-profile-pic img{
     padding-top: 40px;
     width: 120px;
+  }
+  #approach-quote {
+    font-size: 16px;
+  }
+  #quote-speaker {
+    font-size: 16px;
+  }
+  .about-content h1{
+    color: #00A9BA;
+    font-size: 3em;
+  }
+  .about-content .content-link-block{
+    padding-left: 0px;
   }
   .approach-right-pic {
     width: 350px;
@@ -1064,10 +1175,7 @@ div.ccm-page .breadcrumb a.filter.active {
     display: block;
     width: 175px;
   }
-  .top-banner {
-    margin-bottom: 60px;
-    background-size: 100% 130%;
-  }
+
   .portfolio-detail-logo {
     padding-top: 20px !important;
     padding-left: 400px;
@@ -1086,6 +1194,10 @@ div.ccm-page .breadcrumb a.filter.active {
   .pd-body {
     padding: 0 10px 10px 10px;
   }
+  .content-link-block {
+    text-align: left;
+    padding-left: 0px;
+  }
   .content-link-block .portfolio {
 
   }
@@ -1101,8 +1213,12 @@ div.ccm-page .breadcrumb a.filter.active {
     margin-right: -20px;
     width: 20%;
   }
+  .top-banner-contact img{
+    width: 50%;
+  }
   /* Footer */
   #footer-theme {
+
     height: 120px;
   }
   #footer-theme .container{
@@ -1130,10 +1246,14 @@ div.ccm-page .breadcrumb a.filter.active {
   .footer-logo{
     padding: 0 !important;
   }
+  .footer-copyright {
+    text-align: left;
+  }
   #footer-theme section {
     height: 100%;
   }
   .content-link-block {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
 }
