@@ -44,9 +44,6 @@ h3 {
   text-align: center;
 }
 /* Header */
-.row {
-  margin: 0 !important;
-}
 .container {
   padding: 0;
   margin: 0;
@@ -123,8 +120,6 @@ main {
 }
 /* Main Banner */
 .main-banner-icon {
-  width: 215px;
-  height: 110px;
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
@@ -489,6 +484,9 @@ div.ccm-page .breadcrumb a.filter.active {
 /* Dimension Specific */
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+  .row {
+    margin: 0 !important;
+  }
   /* Fixed Side Bar */
   #fixed-sidebar .nav>li>a {
     padding: 0px 15px;
@@ -498,12 +496,12 @@ div.ccm-page .breadcrumb a.filter.active {
     height:350px;
     margin-bottom: 60px;
   }
-  .top-banner {
-    height: 310px;
-    width: 1165px;
+  .main-banner-icon {
+    width: 215px;
+    height: 110px;
   }
-  .top-banner h1{
-    margin-top: -1px;
+  .contact-icon {
+    width: 150px;
   }
   /* Main Top Banner */
   .col-content .main-top-banner {
@@ -561,8 +559,8 @@ div.ccm-page .breadcrumb a.filter.active {
   }
   /* portfolio portfolio detail page */
   .pd-body {
-    padding: 0 20px 0 20px;
-    width: 90%;
+    padding: 0 5% 0 5%;
+    width: 100%;
   }
   .pd-body h1{
     font-size: 2.5em !important;
@@ -644,9 +642,6 @@ div.ccm-page .breadcrumb a.filter.active {
   }
   .main-top-banner {
     padding-top: 40px !important;
-  }
-  .top-banner {
-    height: 310px;
   }
   .hp-content-pic-right img {
     width: 200px !important;
@@ -760,9 +755,6 @@ div.ccm-page .breadcrumb a.filter.active {
   .main-banner h2 {
     font-size: 2.0em !important;
   }
-  .top-banner img {
-    width: 50%;
-  }
   .hp-banner-link-block {
     padding: 10px 0 10px 0;
   }
@@ -846,7 +838,9 @@ div.ccm-page .breadcrumb a.filter.active {
     padding-left: 4px;
     letter-spacing: 2px;
   }
-  #mobile-header-bar-logo {
+  .main-body {
+    width: 90%;
+    margin: 0 5% 0 5%;
   }
   .ccm-responsive-overlay {
     top: 45px !important;
@@ -878,9 +872,6 @@ div.ccm-page .breadcrumb a.filter.active {
   }
   .ccm-custom-style-container {
     padding: 0 !important;
-  }
-  .col-content .main-body {
-    margin: 0 10px 0 10px;
   }
   .col-content .row {
     padding: 0;
@@ -1049,10 +1040,6 @@ div.ccm-page .breadcrumb a.filter.active {
     font-size:2.2em !important;
     padding-top: 1em;
   }
-  .main-body h2 {
-  }
-  .main-body h3 {
-  }
   .ccm-responsive-overlay {
     top: 45px !important;
     text-align: center;
@@ -1072,12 +1059,16 @@ div.ccm-page .breadcrumb a.filter.active {
     margin:auto;
   }
   /* Main Content */
+  .main-body {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
   .col-content {
     left: 0;
     width: 100%;
   }
   /* Mainbody */
-  .top-banner {
+  .main-banner {
     margin-bottom: 60px;
     background-size: 100% 100%;
     width: 100% !important;
@@ -1085,12 +1076,12 @@ div.ccm-page .breadcrumb a.filter.active {
   .main-banner h1{
     font-size: 3em !important;
   }
-  .top-banner img{
+  .main-banner-icon {
     width: 50%;
   }
   .main-banner {
     padding-bottom: 40px;
-    background-size: 1000px 600px;
+    background-size: 100% 100%;
     right: 0;
     background-position: 80% 50%;
     text-align: center;
@@ -1155,7 +1146,7 @@ div.ccm-page .breadcrumb a.filter.active {
     padding-left: 0px;
   }
   .approach-right-pic {
-    width: 350px;
+    width: 100%;
   }
   .approach-help-pic {
     margin-top: -20px 0 20px 0;
@@ -1213,9 +1204,6 @@ div.ccm-page .breadcrumb a.filter.active {
     margin-right: -20px;
     width: 20%;
   }
-  .top-banner-contact img{
-    width: 50%;
-  }
   /* Footer */
   #footer-theme {
 
@@ -1255,5 +1243,10 @@ div.ccm-page .breadcrumb a.filter.active {
   .content-link-block {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .body-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
   }
 }

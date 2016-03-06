@@ -34,12 +34,35 @@ $this->inc('elements/header.php'); ?>
                         ?>
                     </div>
                 </div>
-                <?php
-                $a = new Area('Portfolio Detail Content');
-                $a->setAreaGridMaximumColumns(12);
-                
-                $a->display($c);
-                ?>
+                <div class="row portfolio-detail-desc main-body pd-body">
+                    <div class="col-md-12">
+                    <?php
+                    $a = new Area('Portfolio Detail Title');
+                    $a->setAreaGridMaximumColumns(12);
+                    $a->display($c);
+                    ?>
+                    </div>
+                    <div class="col-md-6">
+                        <?php
+                        $a = new Area('Portfolio Detail Description');
+                        $a->display($c);
+                        ?>
+                    </div>
+                    <div class="col-md-6">
+                        <?php
+                        $a = new Area('Portfolio Detail List');
+                        $a->display($c);
+                        ?>
+                    </div>
+                    <div class="col-md-12">
+                    <?php
+                    $a = new Area('Portfolio Detail Content');
+                    $a->setAreaGridMaximumColumns(12);
+                    
+                    $a->display($c);
+                    ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
