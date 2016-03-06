@@ -718,15 +718,31 @@ div.ccm-page .breadcrumb a.filter.active {
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+  .main-body {
+    padding: 5%;
+    width: 95%;
+  }
+  .main-banner-icon {
+    width: 30%;
+  }
+  .pd-main-body {
+    padding: 5% 2% 5% 2%;
+  }
+  .portfolio-icon {
+    width: 20%;
+  }
+  .contact-icon {
+    width: 20%;
+  }
   .col-content {
     left: 15%;
     width: 86% !important;
   }
-  .col-content .main-body {
-    margin: 0 30px 0 15px;
-  }
   h1 {
     margin-top: 0;
+  }
+  #approach-quote {
+    font-size: 1.9em;
   }
   .hp-main-banner h1 {
     font-size: 2.8em !important;
